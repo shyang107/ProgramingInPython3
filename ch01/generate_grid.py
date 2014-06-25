@@ -27,7 +27,7 @@ if default < minimum:
     default = 2 * minimum
 maximum = get_int("maximum (or Enter for " + str(default) + "): ", minimum, default)
 
-#print("rows: ", rows, " columns: ", columns)
+# print("rows: ", rows, " columns: ", columns)
 row = 0
 while row < rows:
     line = ""

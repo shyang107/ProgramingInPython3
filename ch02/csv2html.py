@@ -18,7 +18,7 @@ command: csv2html.py < data/co2-sample.csv > co2-sample.htm
 
 # co2-sample.html will have contents similar to this:
 # <table border='1'><tr bgcolor='lightgreen'>
-#     <td>Country</td><td align='right'>2000</td><td align='right'>2001</td>
+# <td>Country</td><td align='right'>2000</td><td align='right'>2001</td>
 #     <td align='right'>2002</td><td align='right'>2003</td>
 #     <td align='right'>2004</td></tr>
 #     ...

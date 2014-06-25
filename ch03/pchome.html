@@ -1,0 +1,2327 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta http-equiv="keyword"
+          content="部落格, blog, 新聞台, 相簿, photo, 免費信箱, 信箱, 線上購物, 24h購物, 女性購物, 網路購物, 商店街, 露天拍賣, 分紅網, 金流代收, ATM, Skype, 一元簡訊, IPEVO, 影城, movie, 星座命理, 娛樂, 寵物派, 股市, 下載, toget, 找房子, house, 電子報, epaper, 交友, 家族, 貼圖, 新聞, 網路開店, 電影, 居家生活, 通訊, 娛樂, 政治財經, 休閒, 體育, 影視, 攝影寫真, 觀光, 旅遊, 網路家庭, 貼圖, 露天拍賣, 理財投資, 24小時購物, 影評文章, 達人部落格, 買房子, 居家佈置, 新成屋, 預售屋, 室內設計, 美食, 相片有話說, 相片加註, 外拍, 達人文章, 預告片, 新片預告, 電影時刻表, 紫微運勢, 地圖, map, 健康樂活, 免費軟體, 虛擬主機, 買網址, 學習進修, 彩妝保養, 討論區, 政經, 藝文, 人文抒情, 流行時尚, 廣告刊登, 免費撥接, 遊戲"/>
+    <meta name="description"
+          content="網路家庭國際資訊股份有限公司( PChome Online Inc. )，成立於1998年7月，是國內首居一指的網路服務集團，旗下包括入口網站(部落格、相簿、新聞、電影影城、找房子、免費電子郵箱、股市、交友、電子報…等)、電子商務(線上購物、24h購物、商店街…等)、及電信通訊(Skype、免費撥接…等)網路服務的綜合網路服務商。並以多年來的電子商務經驗跨足跨足C to C平台，於2006年6月與eBay合資成立露天拍賣網路服務公司，為國內買家和賣家提供新型態的網路交易模式。多年來創造出廣大會員與流量，也為台灣的新經濟產業，立下了本土網路公司的典範。"/>
+    <meta name="robots" content="index, follow"/>
+    <meta name="googlebot" content="index, follow"/>
+    <meta http-equiv="expires" content="0"/>
+    <meta property="og:title" content="PChome Online網路家庭首頁"/>
+    <meta property="og:url" content=" http://www.pchome.com.tw/"/>
+    <meta property="og:description"
+          content="網路家庭國際資訊股份有限公司提供網站搜尋及各式網路服務，是國內首居一指的網路服務集團，旗下包括入口網站(部落格、相簿、新聞、電影影城、找房子、免費電子郵箱、股市、交友、電子報…等)、電子商務(線上購物、24h購物、商店街…等)、及電信通訊(Skype、免費撥接…等)網路服務的綜合網路服務商。"/>
+    <meta property="og:image" content="http://www.pchome.com.tw/img/pchomelogo_fb.jpg">
+    <meta property="og:site_name" content="PChome Online網路家庭"/>
+    <meta name="application-name" content="PChome Online 網路家庭"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF"/>
+    <meta name="msapplication-TileImage" content="21d1d17e-021a-40f1-9385-3fed75d0fffe.png"/>
+    <title>PChome Online 網路家庭</title>
+    <link href="favicon.ico?v=1.0" rel="shortcut icon">
+    <link href="apple-touch-icon-152.png" rel="apple-touch-icon" sizes='152x152'/>
+    <link href="apple-touch-icon-76.png" rel="apple-touch-icon" sizes='76x76'/>
+    <link href="apple-touch-icon-120.png" rel="apple-touch-icon" sizes='120x120'/>
+    <link href="apple-touch-icon-60.png" rel="apple-touch-icon" sizes='60x60'/>
+    <!--[if lt IE 9]>
+    <script language="JavaScript" type="text/JavaScript" src="js/html5.js?1403708468"></script><![endif]-->
+    <script language="JavaScript" type="text/JavaScript" src="js/index.js?1403708468"></script>
+    <script language="JavaScript" type="text/JavaScript" src="js/jquery.js?1403708468"></script>
+    <script language="JavaScript" type="text/JavaScript" src="js/jquery.easing.1.3.js"></script>
+    <script language="JavaScript" type="text/JavaScript" src="js/slides.min.jquery.js"></script>
+    <script language="JavaScript" type="text/JavaScript" src="js/jquery.timers.js"></script>
+    <script language="JavaScript" type="text/JavaScript" src="js/jquery.shuffle.js"></script>
+    <script language="JavaScript" type="text/JavaScript" src="js/jquery.cookie.js"></script>
+    <link href="css/index.css?1403708468" rel="stylesheet" type="text/css">
+
+
+    <script language="JavaScript" type="text/JavaScript">
+
+        var path = "mfiles/";
+        //Ready~ Go, do Important thing!
+        $(document).ready(function () {
+
+            //各區塊頁籤滑鼠mouseenter事件
+            $('.mnav li').mouseenter(function () {
+                var ul = $(this).closest('ul');
+                ul.find('li').each(function () {
+                    $(this).attr('class', 'tboff');
+                });
+                $(this).attr('class', 'tbon');
+                geturl = path + $(this).attr('id') + ".html?r=" + Math.round((Math.random() * 10000)); //取得mfile下的各tag_id版型
+                $(this).closest('.mpage').find('.mbody').empty().load(geturl);
+            });
+
+            //Top5滑鼠mouseover事件
+            $('.topnews_tb li').mouseenter(function () {
+                //var thisid = $(this).attr('id');
+                //if (thisid == "tag60"){
+                //    var ul = $(this).closest('ul');
+                //    ul.find('li').each(function(){
+                //      $(this).attr('class', 'tboff');
+                //    });
+                //    show_tax();
+                //}else{
+                var ul = $(this).closest('ul');
+                ul.find('li').each(function () {
+                    $(this).attr('class', 'tboff');
+                });
+                $(this).attr('class', 'tbon');
+                geturl = path + $(this).attr('id') + ".html?r=" + Math.round((Math.random() * 10000)); //取得mfile下的各tag_id版型
+                $(this).closest('.topheader_topnews').find('.topnews_page').empty().load(geturl);
+                //}
+            });
+
+            var y = undefined;
+            var x = null;
+
+            if (!idxJsIsReady) {
+                setTimeout("initial();", 300);
+                return;
+            }
+            setKeywords_c();
+            //設定每一個區塊的focus要在那裡
+            //區塊一設定 all
+            var block1 = [0, 1, 2, 3, 4, 5];
+            $($('#mnav1 li')[block1[Math.floor(Math.random() * block1.length)]]).trigger("mouseover");
+
+            //區塊二設定 (焦點)
+            var block2 = [0];
+            $($('#mnav2 li')[block2[0]]).trigger("mouseover");
+
+            //區塊三設定 (每日一圖)(正妹照)(性感寫真)
+            var block3 = [0, 1, 2, 3, 4, 5];
+            $($('#mnav3 li')[block3[Math.floor(Math.random() * block3.length)]]).trigger("mouseover");
+
+            //區塊四設定 all
+            var block4 = [0, 1, 2, 3, 4, 5];
+            $($('#mnav4 li')[block4[Math.floor(Math.random() * block4.length)]]).trigger("mouseover");
+
+            //區塊五設定
+            var block5 = [5];
+            $($('#mnav5 li')[block5[0]]).trigger("mouseover");
+
+            //區塊六設定
+            var block6 = [0];
+            $($('#mnav6 li')[block6[0]]).trigger("mouseover");
+
+            //區塊6.5設定 all
+            var block65 = [0, 1, 2, 3, 4, 5];
+            $($('#mnav65 li')[block65[Math.floor(Math.random() * block65.length)]]).trigger("mouseover");
+
+            //區塊七設定 all
+            var block7 = [0, 1, 2, 3, 4, 5];
+            $($('#mnav7 li')[block7[Math.floor(Math.random() * block7.length)]]).trigger("mouseover");
+
+            //TOP5 (股市)大盤指數 / (新聞)焦點 為預設
+            var topnewsblock = [0];
+            $($('#top5menu li')[topnewsblock[0]]).trigger("mouseover");
+
+            //報稅倒數計時
+            //show_tax();
+
+            $('#tomob').click(function () {
+                $.cookie('wwwagentflag', 0, {path: '/'});
+                location.href = '/m';
+            });
+
+            $('#ticker_sample2').append('<li><a href="counter_footref.php?sid=785&url=http://event1.rakuya.com.tw/event/charge_gold/?utm_source=PChome&utm_medium=paid_CPM&utm_campaign=PM_gold" target="_blank"><u class="pop3">驚人</u></a><a href="counter_footref.php?sid=802&url=http://forum.rakuya.com.tw/article_detail/index?id=15964" target="_blank">這樣真的合理嗎?</a><b>|</b><a href="counter_footref.php?sid=808&url=http://event1.rakuya.com.tw/event/charge_gold/?utm_source=PChome&utm_medium=paid_CPM&utm_campaign=PM_gold" target="_blank">這樣做好處超多!</a><b>|</b><a href="counter_footref.php?sid=817&url=http://forum.rakuya.com.tw/article_detail/index?id=15966" target="_blank">是否還有好感呢?</a><b>|</b></li>');
+            //change middle ad img
+            //var midimg = [1,2,3,4,5];
+            //$('#middle_ad').attr('src', 'img/midd_ad_banner_' + midimg[Math.floor(Math.random()*midimg.length)] +'.gif');
+
+            //P幣尋寶樂(改成長駐在中欄底部)
+            $('.pcoinad').click(function () {
+                window.open('counter.php?sid=4238900');
+            });
+            //if ($.cookie('hideTreasure') == 1){
+            //  $('.pwrap').hide();
+            //}else{
+            //  // $('.pwrap').show();
+            //  var ViewHeight = $(window).height();         // 頁面高
+            //  $(window).scroll(function () {
+            //    var NowHeight  = $(document).scrollTop(); // 目前高度
+            //    if (NowHeight > ViewHeight) {
+            //      $('.pwrap').stop().animate({ "right": '0px' },"slow");
+            //    } else {
+            //      $('.pwrap').stop().animate({ "right": '-425px' },"slow");
+            //    }
+            //  });
+            //}
+            //$('.bcs').click(function(){
+            //  var date = new Date();
+            //  date.setTime(date.getTime() + (24 * 60 * 60 * 1000));
+            //  $.cookie('hideTreasure', 1, { path:'/', expires: date });
+            //  $('.pwrap').hide();
+            //});
+            //$('.findtheme, #ply').click(function(){
+            //  window.open('counter.php?sid=4238900');
+            //});
+
+            //拖我到桌面，點過關閉一個小時有效
+            // if ($.cookie('wwwShortcut') == 1){
+            //   $('.setindx_alrt').hide();
+            // }else{
+            //   $('.setindx_alrt').show();
+            // }
+            // $('.cls').click(function(){
+            //   var date = new Date();
+            //   date.setTime(date.getTime() + (24 * 60 * 60 * 1000));
+            //   $.cookie('wwwShortcut', 1, { path:'/', expires: date });
+            //   $('.setindx_alrt').hide();
+            // });
+
+
+        }).on("click", "a", function () {
+
+            var thishref = $(this).attr('href');
+            $.post("record.php", { url: thishref });
+
+            var aid = $(this).attr('id');
+            if (aid != 'mypage_url' && aid != 'login_url' && aid != 'logout_url' && aid != 'member_url') {
+                $(this).attr("target", "_blank");
+            }
+        });
+
+    </script>
+    <script type="text/javascript" src="http://ad.pchome.com.tw/cs/js?s=1"></script>
+</head>
+
+<body>
+<!-- 19_pchome_online_h start -->
+<style>.wdbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 850;
+    width: 100%;
+    height: auto;
+}
+
+.wdbar_s {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    z-index: 1;
+    margin-left: -490px;
+    width: 980px;
+    height: 60px;
+}
+
+.wdbar_l {
+    position: absolute;
+    bottom: -170px;
+    left: 50%;
+    z-index: 2;
+    margin-left: -490px;
+    width: 980px;
+    height: 170px;
+}
+
+.wdbar_s b {
+    position: absolute;
+    bottom: 5px;
+    right: 2px;
+    z-index: 1;
+    display: block;
+    width: 87px;
+    height: 22px;
+    cursor: pointer;
+    background: #242321;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    border-radius: 5px;
+    color: #dfbc00;
+    text-align: center;
+    line-height: 20px;
+    font-size: 13px;
+}
+
+.wdbar_l b {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    z-index: 2;
+    display: block;
+    width: 87px;
+    height: 22px;
+    cursor: pointer;
+    background: #242321;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    border-radius: 5px;
+    color: #dfbc00;
+    text-align: center;
+    line-height: 20px;
+    font-size: 13px;
+}</style>
+<div id="wudeebar" class="wdbar">
+    <div class="wdbar_s"><b></b><a href="http://adcl.pchome.com.tw/clickAd2.html?q=19~pchome_online_h~778448"
+                                   target="_blank"><img src="http://pic.adver.com.tw/adpics/pic_778447_489860.jpg"></a>
+    </div>
+    <div class="wdbar_l"><b>關閉廣告▼</b><a href="http://adcl.pchome.com.tw/clickAd2.html?q=19~pchome_online_h~778448"
+                                        target="_blank"><img src="http://pic.adver.com.tw/adpics/pic_778447_489859.jpg"></a>
+    </div>
+</div>
+<script language="JavaScript" type="text/JavaScript" src="http://pic.adver.com.tw/js/ad_wudeebar.js"></script>
+<script language="JavaScript"></script>
+<!-- 19_pchome_online_h end --><!-- 24_pchome_online_h start --><a
+        href="http://adcl.pchome.com.tw/clickAd2.html?q=24~pchome_online_h~627083" target="_blank"></a><!-- 24_pchome_online_h end -->
+<!-- 16_pchome_online_h start --><a href="http://adcl.pchome.com.tw/clickAd2.html?q=16~pchome_online_h~627075"
+                                    target="_blank"></a><!-- 16_pchome_online_h end -->
+<div class="wrapper">
+<!-- 82_pchome_online_h start --><!-- error_08 --><!-- 82_pchome_online_h end --><!-- 87_pchome_online_h start -->
+<style>#div_superbar_swf {
+    position: relative;
+    display: block;
+    width: 980px;
+    height: 80px;
+    margin: 0 auto;
+    background: #FFF;
+    color: #fff
+}</style>
+<div id="div_superbar_swf">
+    <noscript><a href="http://adcl.pchome.com.tw/clickAd2.html?q=87~pchome_online_h~782235" target="_blank"><img
+            src="http://pic.adver.com.tw/adpics/pic_782235_493081.jpg" width="980" height="80" border="0"></a>
+    </noscript>
+</div>
+<script language="javascript">var superbar_id = "ad_superbar_" + "782235";
+var superbar_url = "http://adcl.pchome.com.tw/clickAd2.html?q=87~pchome_online_h~782235";
+var superbar_target = "_blank";
+var superbar_file_img = "http://pic.adver.com.tw/adpics/pic_782235_493081.jpg";
+var superbar_file_swf = "http://pic.adver.com.tw/adpics/pic_782235_493083.swf";
+var superbar_file_exp = "http://pic.adver.com.tw/adpics/pic_782235_493082.swf";
+var superbar_file_vdo = "";
+var superbar_width_swf = 980;
+var superbar_height_swf = 80;
+var superbar_width_exp = 980;
+var superbar_height_exp = 315;
+var superbar_volume = 50;</script>
+<script src="http://pic.adver.com.tw/js/ad_superbar_v.js"></script>
+<script language="JavaScript"></script>
+<!-- 87_pchome_online_h end --><!-- 85_pchome_online_h start --><!-- error_08 --><!-- 85_pchome_online_h end -->
+<!-- 90_pchome_online_h start --><!-- error_08 --><!-- 90_pchome_online_h end --><!-- 20130502 kazalogo ad -->
+<!--
+<style>
+    div.wrapper {background:#fff url(img/outerbg.gif) 50% 0 no-repeat;}
+    div.wrapper .wrapper_ad{position:absolute;display:block;top:0;left:0;width:100%;height:1965px;border:0;}
+    div.coordinatebox {background:none;width:980px}
+</style>
+<a href="/counter/2609350*http://kaza.pchome.com.tw/event/crazy/?ref=pchome_ad" target="_blank" class="wrapper_ad"></a>
+-->
+<!-- 20130502 kazalogo ad -->
+<!-- 首頁大框架 start -->
+<div class="coordinatebox">
+
+<!-- 頁首 start -->
+<header>
+    <div class="topheader">
+
+        <!-- TOP5 Start -->
+        <div class="topheader_topnews">
+            <ul class="topnews_tb" id="top5menu">
+                <li class="tboff" id="tag56"><a id="tpnews_56" target="_blank" href="counter.php?sid=400928">抽大獎！</a>
+                </li>
+                <li class="tboff" id="tag57"><a id="tpnews_57" target="_blank"
+                                                href="counter_footref.php?sid=584&url=http://news.pchome.com.tw/event/2014/worldcup/">世足</a>
+                </li>
+                <li class="tboff" id="tag58"><a id="tpnews_58" target="_blank"
+                                                href="counter_footref.php?sid=587&url=http://news.pchome.com.tw/cat/living">生活</a>
+                </li>
+                <li class="tboff" id="tag59"><a id="tpnews_59" target="_blank"
+                                                href="counter_footref.php?sid=591&url=http://news.pchome.com.tw/cat/politics">政治</a>
+                </li>
+                <li class="tboff" id="tag60"><a id="tpnews_60" target="_blank"
+                                                href="counter_footref.php?sid=593&url=http://news.pchome.com.tw/cat/sport">體育</a>
+                </li>
+            </ul>
+            <div class="topnews_page" id="topnewsb">&nbsp;</div>
+        </div>
+        <!-- TOP5 End -->
+
+        <!-- 頁首中欄 search bar Start -->
+        <div class="topheader_search">
+            <a class="pchomeUSA" href="counter.php?sid=3211949">美國開店</a>
+
+            <form name="search" method="get" action="search_redirect.php">
+                <ul class="search_tb">
+                    <li><a onclick="search_tag(1);" id="lia1" class="tbon">找全部</a><b>|</b></li>
+                    <li><a onclick="search_tag(2);" id="lia2">找商品</a><b>|</b></li>
+                    <li><a href="counter_footref.php?sid=653&url=http://lscp.pchome.com.tw/soccer"
+                           style="width:60px;height:20px; display:block; background:url(img/search_icon.gif) no-repeat;margin:3px 0 0 0"></a>
+                    </li>
+                </ul>
+                <div class="search_field" id="search_area">
+                    <input id="s_input" type="text" name="q" class="field_txtarea">
+                    <input id="s" type="hidden" name="s" value="1">
+                    <input id="s_button" type="submit" name="s_submit" value="" class="field_submit">
+                </div>
+                <div id="keywords" class="search_keyword">熱門：</div>
+            </form>
+        </div>
+        <!-- 頁首中欄 search bar End -->
+
+        <!-- 頁首左欄 logo 開始 -->
+        <div class="topheader_logo">
+            <style>.topheader_search {
+                width: 330px
+            }
+
+            .topheader_logo .logo_ad {
+                background: #fff;
+                width: 290px;
+            }
+
+            .topheader_search .search_field .field_txtarea {
+                width: 210px
+            }</style>
+            <!-- 81_pchome_online_h start --><a
+                href="http://adcl.pchome.com.tw/clickAd2.html?q=81~pchome_online_h~779752" target="_blank"
+                style="position:absolute;z-index:10;width:290px;height:80px;display:block;background:url(none)"></a>
+            <script language="JavaScript" src="http://pic.adver.com.tw/js/PChomeFS.js"></script>
+            <script language="JavaScript">  var obj = new Object();
+            obj.flash_adno = "779752";
+            obj.flash_file = "http://pic.adver.com.tw/adpics/pic_779750_491110.swf";
+            obj.img_file = "http://pic.adver.com.tw/adpics/pic_779750_491111.jpg";
+            obj.flash_args = "ad_url=http://adcl.pchome.com.tw/clickAd2.html?q=81~pchome_online_h~779752,ad_target=_blank";
+            obj.flash_ad_url = "http://adcl.pchome.com.tw/clickAd2.html?q=81~pchome_online_h~779752";
+            obj.flash_ad_target = "_blank";
+            obj.flash_width = 290;
+            obj.flash_height = 80;
+            obj.wmode = "opaque";
+            createSWF(obj);</script>
+            <script language="JavaScript"></script>
+            <!-- 81_pchome_online_h end -->
+            <div class="logo_login">
+                <a id="set_index" class="set_index" href="counter.php?sid=4296338">設為首頁</a><a id="login_url"
+                                                                                              href="counter.php?sid=4296339">登入</a>&nbsp;&nbsp;&nbsp;&nbsp;<a
+                    href="counter.php?sid=423787" id="member_url">會員中心</a>
+                <!-- <div class="setindx_alrt" style="display:none"><p class="alrtbox">拖我去桌面</p><p class="arwup"></p><a class="cls" style="cursor:pointer"></a></div> -->
+            </div>
+        </div>
+        <!-- 頁首左欄 logo 結束 -->
+    </div>
+</header>
+<!-- 頁首 end -->
+
+<!-- 上欄 左欄 中欄 下欄 頁尾 start -->
+<div class="container">
+<!-- 上欄 start -->
+<div class="sidebar_top">
+    <aside class="top_adpublish"><a href="counter.php?sid=4304344"><img src="img/icon_adpublish.gif" border="0"></a>
+    </aside>
+    <aside class="top_headlinead"><!-- 0_pchome_online_h start --><!-- 0_pchome_online_h start --><a
+            href="http://adcl.pchome.com.tw/clickAd2.html?q=0~pchome_online_h~781158" target="_blank">專業達人教你買對3C</a><!-- 0_pchome_online_h end -->
+        <!-- 0_pchome_online_h end --><!-- 14_pchome_online_h start --><!-- 14_pchome_online_h start --><a
+                href="http://adcl.pchome.com.tw/clickAd2.html?q=14~pchome_online_h~786095" target="_blank">福義軒大包手工蛋捲</a><!-- 14_pchome_online_h end -->
+        <!-- 14_pchome_online_h end --><!-- 23_pchome_online_h start --><!-- 23_pchome_online_h start --><a
+                href="http://adcl.pchome.com.tw/clickAd2.html?q=23~pchome_online_h~782102"
+                target="_blank">專家：五檔漲過頭小心爆掉</a><!-- 23_pchome_online_h end --><!-- 23_pchome_online_h end -->
+        <!-- 1_pchome_online_h start --><!-- 1_pchome_online_h start --><a
+                href="http://adcl.pchome.com.tw/clickAd2.html?q=1~pchome_online_h~788325"
+                target="_blank">演藝圈「造山運動」超熱...</a><!-- 1_pchome_online_h end --><!-- 1_pchome_online_h end --></aside>
+</div>
+<!-- 上欄 end -->
+<!-- 左欄 start -->
+<div class="sidebar_left">
+    <!-- 頻道列 Start -->
+    <nav>
+        <ul class="left">
+            <li><a href="/counter/572*http://shopping.pchome.com.tw/">線上購物</a></li>
+            <li><a href="/counter/25906*http://24h.pchome.com.tw/">24h購物</a></li>
+            <li><a href="/counter/1908069*http://shopping.pchome.com.tw/book">24h書店</a></li>
+            <li><a href="/counter/574*http://www.pcstore.com.tw/">商店街</a></li>
+            <li><a href="/counter/1440051*http://www.liker.com.tw/">Liker團購</a></li>
+            <li style="background:url(img/icon_ruten_full.jpg) 0 0 no-repeat;cursor:pointer"
+                onclick="window.open('/counter/575*http://www.ruten.com.tw/')"><a
+                    href="/counter/575*http://www.ruten.com.tw/"></a></li>
+        </ul>
+        <ul class="right">
+            <li style="background:url(img/icon_pchometalk_full.jpg) 0 0 no-repeat;cursor:pointer"
+                onclick="window.location.href='/counter/1918408*http://shopping.pchome.com.tw/DSAD5D-A82987778'"><a
+                    href="/counter/1918408*http://www.pchometalk.com/zh-tw/index.html" class='c2'><i></i></a></li>
+            <li><a href="/counter/647*http://mail.pchome.com.tw/">信箱</a></li>
+            <li><a href="/counter/657*http://skype.pchome.com.tw/index.htm">Skype</a></li>
+            <li><a href="/counter/579*http://news.pchome.com.tw/">新聞</a><em>|</em><a
+                    href="/counter/3738*http://news.pchome.com.tw/weather" class='c2'>氣象</a></li>
+            <li><a style="background:url(img/icon_rakuya.gif) left center no-repeat;padding-left:18px"
+                   href="/counter/113759*http://www.rakuya.com.tw/">買賣租屋</a></li>
+            <li><a href="/counter/580*http://pchome.megatime.com.tw/">股市</a><em>|</em><a
+                    href="/counter/1144796*http://pchome.megatime.com.tw/order/">下單</a></li>
+        </ul>
+    </nav>
+    <div class="nav_border"></div>
+    <nav>
+        <ul class="left">
+            <li><a href="/counter/982543*http://global.pchome.com.tw/">全球購物</a></li>
+            <li><a href="/counter/1874691*http://www.pchomepay.com.tw/">支付連</a></li>
+            <li><a href="/counter/577*http://atm.pchome.com.tw/pchome_otheratm.html">ATM轉帳</a></li>
+            <li><a href="/counter/5333633*http://news.pchome.com.tw/event/2014/worldcup/" class='c2'>世界盃足球</a></li>
+            <li><a href="/counter/1000429*http://car.pchome.com.tw/" class='c2'>買車</a><em>|</em><a
+                    href="/counter/782*http://car.pchome.com.tw/parts.php">車3C</a></li>
+            <li><a style="background:url(img/icon_togame.gif) left center no-repeat;padding-left:18px"
+                   href="/counter/1132770*http://www.togame.com.tw/"><b>toGame</b></a></li>
+        </ul>
+        <ul class="right">
+            <li><a style="background:url(img/icon_search.gif) left center no-repeat;padding-left:18px"
+                   href="/counter/1174091*http://search.pchome.com.tw/">找東西</a></li>
+            <li><a href="/counter/1404360*http://kaza.pchome.com.tw/?ref=pchome_ad">kaza隨拍</a></li>
+            <li><a href="/counter/649*http://photo.pchome.com.tw/"><b>相簿</b></a></li>
+            <li><a href="/counter/648*http://mypaper.pchome.com.tw/"><b>個人新聞台</b></a></li>
+            <li><a href="/counter/3211903*http://www.pchomeusa.com/">PChome美國</a></li>
+            <li><a href="/counter/794392*http://travel.pchome.com.tw/">旅行團</a><em>|</em><a
+                    href="/counter/1905641*http://travel.pchome.com.tw/page/flight/" class='c2'>機票</a></li>
+        </ul>
+    </nav>
+    <div class="nav_border"></div>
+    <nav>
+        <ul class="left">
+            <li><a href="/counter/435717*http://webgame.pchome.com.tw/">小遊戲</a></li>
+            <li><a href="/counter/292057*http://webgame.pchome.com.tw/mj/">線上麻將</a></li>
+            <li><a href="/counter/4277758*http://lscp.pchome.com.tw/house" class='c2'>找房子</a></li>
+            <li><a href="/counter/44684*http://movie.pchome.com.tw/">電影</a><em>|</em><a
+                    href="/counter/2051432*http://movie.pchome.com.tw/" class='c2'>訂票</a></li>
+            <li><a href="/counter/652*http://www.tagapie.com.tw/">寵物派</a></li>
+            <li><a href="/counter/594*http://toget.pchome.com.tw/">下載</a></li>
+        </ul>
+        <ul class="right">
+            <li><a href="/counter/422568*http://forum.pchome.com.tw/">開講</a></li>
+            <li><a href="/counter/473478*http://mypage.pchome.com.tw/">名片盒</a></li>
+            <li><a style="background:url(img/new_icon.jpg) left center no-repeat;padding-left:18px"
+                   href="/counter/539*http://news.pchome.com.tw/media/icare">愛健康</a></li>
+            <li><a href="/counter/651*http://club.pchome.com.tw/">家族</a></li>
+            <li><a href="/counter/1973370*http://classifieds.pchome.com.tw/">店家刊登</a></li>
+            <li><a href="/counter/650*http://love.pchome.com.tw/">交友</a></li>
+        </ul>
+    </nav>
+    <div class="nav_border"></div>
+    <!--app下載區 Start -->
+    <div>
+        <ul class="appdl">
+            <li><a href="counter.php?sid=4187403"><span class="app_srh apspt"></span><em class="tit">找東西</em></a></li>
+            <li><a href="counter.php?sid=4187433"><span class="app_nws apspt"></span><em class="tit">新聞</em></a></li>
+            <li><a href="counter.php?sid=4187452"><span class="app_stock apspt"></span><em class="tit">股市</em></a></li>
+            <li><a href="counter.php?sid=4187514"><span class="app_blog apspt"></span><em class="tit">個人新聞</em></a></li>
+            <li><a href="counter.php?sid=4187532"><span class="app_photo apspt"></span><em class="tit">相簿</em></a></li>
+            <li><a href="counter.php?sid=4187660"><span class="app_kaza apspt"></span><em class="tit">kaza</em></a></li>
+            <li><a href="counter.php?sid=4187685"><span class="app_24h apspt"></span><em class="tit">24購物</em></a></li>
+            <li><a href="counter.php?sid=4187705"><span class="app_ruten apspt"></span><em class="tit">露天</em></a></li>
+            <li><a href="counter.php?sid=4187708"><span class="app_zui apspt"></span><em class="tit">注音輸入</em></a></li>
+        </ul>
+    </div>
+    <!--app下載區 End -->
+    <nav>
+        <ul class="left">
+            <li><a href="/counter/582*http://epaper.pchome.com.tw/">電子報</a></li>
+            <li><a href="/counter/675*http://sms.pchome.com.tw/">一元簡訊</a></li>
+        </ul>
+        <ul class="right">
+            <li><a href="/counter/711487*http://vexchange.pchome.com.tw/">虛擬交易所</a></li>
+            <li><a href="/counter/332524*http://beauty.pchome.com.tw/">美學院</a></li>
+        </ul>
+    </nav>
+    <nav>
+        <ul class="left">
+            <li><a href="/counter/592*http://fate.pchome.com.tw/">星座命理</a></li>
+            <li><a href="/counter/670*http://bonus.pchome.com.tw/web/index.php">免費撥接</a></li>
+            <li><a href="/counter/766947*http://office-sms.pchome.com.tw/index.html">企業簡訊</a></li>
+            <li><a href="/counter/585*http://health.pchome.com.tw/">健康樂活</a></li>
+            <li><a href="/counter/671*http://myname.pchome.com.tw/">買網址</a></li>
+        </ul>
+        <ul class="right">
+            <li><a href="/counter/124324*http://fund.pchome.com.tw/">基金</a></li>
+            <li><a href="/counter/779*http://www.ipevo.com.tw/">IPEVO</a></li>
+            <li><a href="/counter/571*http://webhosting.pchome.com.tw/activity/officemail/index.html"
+                   class='c2'>企業郵件</a></li>
+            <li><a href="/counter/586*http://elearning.pchome.com.tw/">學習進修</a></li>
+            <li><a href="/counter/741220*http://www.toweb.com.tw/">網站空間</a></li>
+        </ul>
+    </nav>
+    <nav>
+        <ul class="left">
+            <li><a href="/counter/674*http://webhosting.pchome.com.tw/">虛擬主機</a></li>
+            <li><a href="/counter/131466*http://news.pchome.com.tw/magazine/">雜誌</a></li>
+            <li><a href="/counter/540*http://ejokeimg.pchome.com.tw/">貼圖</a></li>
+        </ul>
+        <ul class="right">
+            <li><a href="/counter/590*http://www.photofast.com.tw/default.asp?cpurl=pchome">沖印</a></li>
+            <li><a href="/counter/34936*http://money.pchome.com.tw/">理財</a></li>
+            <li><a href="/counter/15386*http://member.pchome.com.tw/">會員中心</a></li>
+        </ul>
+    </nav>
+    <div class="nav_border"></div>
+    <!-- 頻道列 End -->
+
+    <aside>
+        <!-- 股市申辦開戶AD start -->
+        <div class="left_adbox">
+            <div style="padding: 6px 10px;width: 180px;height: 43px;overflow: hidden;">
+                <a href="/counter/967*https://www.tssco.com.tw/jsp/member/referaccount.jsp?ref=20442d6a4e&mediasource=134"><img
+                        src="img/left_ad_banner.jpg"></a>
+            </div>
+        </div>
+        <!-- 股市申辦開戶AD end -->
+        <div class="left_adbox">
+        </div>
+        <!-- 股市banner180x65 Start -->
+        <div class="left_adbox">
+            <div style="height: 5px"></div>
+            <div style="padding: 6px 10px;width: 180px;height: 68px;overflow: hidden;">
+                <script>
+                    var ridx;
+                    ridx = Math.floor(Math.random() * 6);
+                    switch (ridx) {
+                        case 0:
+                            document.writeln('<a href="/counter/2682328*http://pchome.syspower.com.tw/column/sto15/2" target="_blank"><img src="img/left_180x65_1_banner.gif" border="0" width="180" height="65"></a>');
+                            break;
+                        case 1:
+                            document.writeln('<a href="/counter/2682328*http://pchome.syspower.com.tw/column/sto15/2" target="_blank"><img src="img/left_180x65_2_banner.gif" border="0" width="180" height="65"></a>');
+                            break;
+                        case 2:
+                            document.writeln('<a href="/counter/2682328*http://pchome.syspower.com.tw/column/sto15/2" target="_blank"><img src="img/left_180x65_3_banner.gif" border="0" width="180" height="65"></a>');
+                            break;
+                        case 3:
+                            document.writeln('<a href="/counter/2682328*http://pchome.syspower.com.tw/column/sto15/2" target="_blank"><img src="img/left_180x65_4_banner.gif" border="0" width="180" height="65"></a>');
+                            break;
+                        case 4:
+                            document.writeln('<a href="/counter/2682328*http://pchome.syspower.com.tw/column/sto15/2" target="_blank"><img src="img/left_180x65_5_banner.gif" border="0" width="180" height="65"></a>');
+                            break;
+                        default:
+                            document.writeln('<a href="/counter/2682328*http://pchome.syspower.com.tw/column/sto15/2" target="_blank"><img src="img/left_180x65_1_banner.gif" border="0" width="180" height="65"></a>');
+                            break;
+                    }
+                </script>
+            </div>
+            <div style="height: 5px"></div>
+        </div>
+        <!-- 股市banner180x65 End -->
+
+        <div class="left_adbox">
+            <div class="adbox_ad"><a href="counter.php?sid=5818963"><img
+                    src="http://w6.pchome.com.tw/img/53/20140620145511_396131585.jpg"><b>旅遊好輕鬆！台北膠囊旅館</b>原來台北車站有個這麼可愛又設備充足的旅店啊！</a>
+            </div>
+            <div class="adbox_border"></div>
+            <div class="adbox_ad"><a href="counter.php?sid=5818964"><img
+                    src="http://w6.pchome.com.tw/img/53/20140620120835_1098763321.jpg"><b>迎接夏天比基尼</b>夏天來臨海灘比基尼女生一定要先做的功課</a>
+            </div>
+        </div>
+        <div class="left_hotact">
+            <ul>
+                <li>．<a href="counter.php?sid=5818965">老婆徹夜未歸泡bar瘋世足</a></li>
+                <li>．<a href="counter.php?sid=5832868">粉絲團按讚，送菲律賓機票</a></li>
+                <li>．<a href="counter.php?sid=5818967">素顏也有好氣色、透亮肌</a></li>
+                <li>．<a href="counter.php?sid=5818968">富士mini8拍立得↘0元搶購</a></li>
+                <li>．<a href="counter.php?sid=5818969">ZenFone狂降↘限量加碼送</a></li>
+                <li>．<a href="counter.php?sid=5820549">香港最便宜住宿一覽表</a></li>
+                <li>．<a href="counter.php?sid=5818971">限量下殺觸控電霸行動電源</a></li>
+                <li>．<a href="counter.php?sid=5818972">賀找房子上線抽7-11禮券</a></li>
+            </ul>
+        </div>
+    </aside>
+</div>
+<!-- 左欄 end -->
+<!-- 中欄 start -->
+<div class="contentbox">
+<!-- 區塊一 start -->
+<div class="mpage">
+    <p class="bdline"></p>
+    <ul class="mnav" id="mnav1">
+        <li class="tboff" id="tag7"><a href="counter/114565*http://shopping.pchome.com.tw/" target="_blank">24h購物</a>
+        </li>
+        <li class="tboff" id="tag5"><a
+                href="counter_footref.php?sid=5717377&url=http://events.samsung.com.tw/hhp/galaxys5" target="_blank">三星專區</a>
+        </li>
+        <li class="tboff" id="tag29"><a href="counter/114567*http://www.rakuya.com.tw/" target="_blank">樂屋網</a></li>
+        <li class="tboff" id="tag4"><a href="counter/114569*http://www.ruten.com.tw/" target="_blank">露天拍賣</a></li>
+        <li class="tboff" id="tag6"><a href="counter_footref.php?sid=1918409&url=http://car.pchome.com.tw/"
+                                       target="_blank">瘋殺特賣</a></li>
+        <li class="tboff" id="tag8"><a href="counter_footref.php?sid=5801545&url=http://www.lifetour.com.tw/"
+                                       target="_blank">旅遊特賣</a></li>
+    </ul>
+    <div class="mbody" id="mbody1">&nbsp;</div>
+</div>
+<!-- 區塊一 end -->
+<!-- ad_420x80 start -->
+<aside class="center_ad7">
+    <!-- 7_pchome_online_h start --><a href="http://adcl.pchome.com.tw/clickAd2.html?q=7~pchome_online_h~785152"
+                                       target="_blank"><img border="0"
+                                                            src="http://pic.adver.com.tw/adpics/pic_785152_495548.jpg"/></a><!-- 7_pchome_online_h end -->
+</aside>
+<!-- ad_420x80 end -->
+<!-- 大三元 start -->
+<!-- 139_pchome_online_h start -->
+<style>.ad_triple {
+    display: block;
+    width: 100%;
+    height: 115px;
+    margin: 5px 0
+}
+
+.ad_triple p {
+    display: block;
+    float: left;
+    width: 136px;
+    height: 113px;
+    margin-right: 3px;
+    border: #d1d1d1 1px solid;
+    overflow: hidden
+}
+
+.ad_triple p.lastchd {
+    margin-right: 0px
+}
+
+.ad_triple p a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+.ad_triple p a img {
+    display: block;
+    width: 136px;
+    height: 113px;
+}
+
+.ad_triple p a i {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 28px;
+    line-height: 28px;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    color: #fff;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.ad_triple p a i {
+    font-family: "微軟正黑體", li hei pro, "Courier New", Courier, monospace;
+    text-shadow: 1px 1px 0px #333;
+    filter: alpha(opacity=55);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=55)";
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=55);
+}
+
+.ad_triple p a i em {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.75;
+    filter: (opacity=75);
+}
+
+.ad_triple p a:hover i {
+    color: #f5ee0f
+}</style>
+<div class="ad_triple" id="adTriple">
+    <script language="JavaScript"></script>
+    <!-- 139_pchome_online_h end --><!-- 57_pchome_online_h start --><p><a
+        href="http://adcl.pchome.com.tw/clickAd2.html?q=57~pchome_online_h~780843" target="_blank"><img
+        src="http://pic.adver.com.tw/adpics/pic_780843_492215.jpg"><i><em></em>溪頭呼吸芬多精</i></a></p>
+    <script language="JavaScript"></script>
+    <p><a href="http://adcl.pchome.com.tw/clickAd2.html?q=57~pchome_online_h~780838" target="_blank"><img
+            src="http://pic.adver.com.tw/adpics/pic_780838_492210.gif"><i><em></em>好股★穩穩賺</i></a></p>
+    <script language="JavaScript"></script>
+    <p><a href="http://adcl.pchome.com.tw/clickAd2.html?q=57~pchome_online_h~781991" target="_blank"><img
+            src="http://pic.adver.com.tw/adpics/pic_781991_493046.gif"><i><em></em>估價抽禮券!</i></a></p>
+    <script language="JavaScript"></script>
+    <!-- 57_pchome_online_h end --><!-- 140_pchome_online_h start --></div>
+<script language="javascript">    var adTriple_obj = document.getElementById("adTriple");
+adTriple_obj.getElementsByTagName("p").item(2).className = "lastchd";</script>
+<script language="JavaScript"></script>
+<!-- 140_pchome_online_h end -->      <!-- 大三元 end -->
+<!-- 跑馬燈開始 -->
+<aside class="center_adticker">
+    <ul id="ticker_sample">
+        <li><a href="counter.php?sid=5828493" target="_blank"><u class="pop3">熱門</u></a>
+            <a href="counter.php?sid=5828494" target="_blank">護膝</a><b>|</b>
+            <a href="counter.php?sid=5828495" target="_blank">杉木衣櫥</a><b>|</b>
+            <a href="counter.php?sid=5828496" target="_blank">行車記錄器</a><b>|</b>
+            <a href="counter.php?sid=5828497" target="_blank">後背包</a><b>|</b>
+        </li>
+        <li><a href="counter.php?sid=5828499" target="_blank"><u class="pop1">超夯</u></a>
+            <a href="counter.php?sid=5828500" target="_blank">-4度涼感衣↘199</a><b>|</b>
+            <a href="counter.php?sid=5828501" target="_blank">台灣唯一！-5℃純棉涼感襯衫</a><b>|</b>
+        </li>
+        <li><a href="counter.php?sid=5828505" target="_blank"><u class="pop2">熱門</u></a>
+            <a href="counter.php?sid=5828506" target="_blank">限時抽↘富士mini8拍立得</a><b>|</b>
+            <a href="counter.php?sid=5828507" target="_blank">【免費好禮】出國必備! </a><b>|</b>
+        </li>
+        <li><a href="counter.php?sid=5828511" target="_blank"><u class="pop4">搶翻</u></a>
+            <a href="counter.php?sid=5828512" target="_blank">富士mini8拍立得↘限量0元</a><b>|</b>
+            <a href="counter.php?sid=5828513" target="_blank">免費聽空中美語課程</a><b>|</b>
+        </li>
+        <li><a href="counter.php?sid=5828517" target="_blank"><u class="pop3">限量</u></a>
+            <a href="counter.php?sid=5828518" target="_blank">好禮成雙★拍立得送給你!</a><b>|</b>
+            <a href="counter.php?sid=5828519" target="_blank">免費英文會話課程</a><b>|</b>
+        </li>
+        <li><a href="counter.php?sid=5828523" target="_blank"><u class="pop3">爆夯</u></a>
+            <a href="counter.php?sid=5828524" target="_blank">轉職加薪3大撇步</a><b>|</b>
+            <a href="counter.php?sid=5828525" target="_blank">免費英文課程</a><b>|</b>
+            <a href="counter.php?sid=5828526" target="_blank">最想跳槽的公司TOP10</a><b>|</b>
+        </li>
+    </ul>
+    <script language="javascript">
+        function slideLine(box, stf, delay, speed, h) {
+            var slideBox = document.getElementById(box);
+            var delay = delay || 1000, speed = speed || 20, h = h || 20;
+            var tid = null, pause = false;
+            var s = function () {
+                tid = setInterval(slide, speed);
+            }
+            var slide = function () {
+                if (pause) return;
+                slideBox.scrollTop += 1;
+                if (slideBox.scrollTop % h == 0) {
+                    clearInterval(tid);
+                    slideBox.appendChild(slideBox.getElementsByTagName(stf)[0]);
+                    slideBox.scrollTop = 0;
+                    setTimeout(s, delay);
+                }
+            }
+            slideBox.onmouseover = function () {
+                pause = true;
+            }
+            slideBox.onmouseout = function () {
+                pause = false;
+            }
+            setTimeout(s, delay);
+        }
+        slideLine('ticker_sample', 'li', 3000, 20, 20);
+    </script>
+</aside>
+<!-- 跑馬燈結束 -->
+<!-- 區塊二 Start
+      <li class="tboff" id="tag27"><a href="counter_footref.php?sid=5648362&url=http://crazymike.tw/" target="_blank">瘋狂賣客</a></li>
+      -->
+<div class="mpage">
+    <p class="bdline"></p>
+    <ul class="mnav" id="mnav2">
+        <li class="tboff" id="tag24"><a href="counter_footref.php?sid=25259&url=http://news.pchome.com.tw/"
+                                        target="_blank">23點新聞</a></li>
+        <li class="tboff" id="tag23"><a
+                href="counter_footref.php?sid=538&url=http://news.pchome.com.tw/cat/entertainment/hot/" target="_blank">娛樂</a>
+        </li>
+        <li class="tboff" id="tag28"><a href="counter_footref.php?sid=535&url=http://news.pchome.com.tw/cat/living/hot/"
+                                        target="_blank">生活</a></li>
+        <li class="tboff" id="tag40"><a
+                href="counter_footref.php?sid=25260&url=http://news.pchome.com.tw/cat/politics/hot/"
+                target="_blank">政治</a></li>
+        <li class="tboff" id="tag27"><a
+                href="counter_footref.php?sid=25591&url=http://news.pchome.com.tw/cat/sport/hot/" target="_blank">體育</a>
+        </li>
+        <li class="tboff" id="tag26"><a
+                href="counter_footref.php?sid=25258&url=http://news.pchome.com.tw/cat/society/hot/"
+                target="_blank">社會</a></li>
+    </ul>
+    <div class="mbody" id="mbody2">&nbsp;</div>
+</div>
+<!-- 區塊二 End -->
+
+<!-- 區塊三 Start
+      <li class="tboff" id="tag35"><a href="counter_footref.php?sid=&url=" target="_blank"></a></li>
+      <li class="tboff" id="tag38"><a href="counter_footref.php?sid=539&url=http://photo.pchome.com.tw/" target="_blank">每日一圖</a></li>
+      <li class="tboff" id="tag36"><a href="counter_footref.php?sid=537&url=http://photo.pchome.com.tw/" target="_blank">私密照</a></li>
+      <li class="tboff" id="tag39"><a href="counter_footref.php?sid=400927&url=http://photo.pchome.com.tw/" target="_blank">寫真集</a></li>
+      <li class="tboff" id="tag49"><a href="counter_footref.php?sid=75460&url=http://photo.pchome.com.tw/" target="_blank">精彩相片</a></li>
+      <li class="tboff" id="tag35"><a href="counter_footref.php?sid=25597&url=http://photo.pchome.com.tw/" target="_blank">漏網鏡頭</a></li>
+      -->
+<div class="mpage">
+    <p class="bdline"></p>
+    <ul class="mnav" id="mnav3">
+        <li class="tboff" id="tag38"><a href="counter_footref.php?sid=5749920&url=http://photo.pchome.com.tw/"
+                                        target="_blank">美腿甜心</a></li>
+        <li class="tboff" id="tag36"><a href="counter_footref.php?sid=5795138&url=http://photo.pchome.com.tw/"
+                                        target="_blank">正妹報報</a></li>
+        <li class="tboff" id="tag39"><a href="counter_footref.php?sid=5750203&url=http://photo.pchome.com.tw/"
+                                        target="_blank">網路熱議</a></li>
+        <li class="tboff" id="tag49"><a href="counter_footref.php?sid=5828662&url=http://photo.pchome.com.tw/"
+                                        target="_blank">新生女神</a></li>
+        <li class="tboff" id="tag35"><a href="counter_footref.php?sid=5828626&url=http://photo.pchome.com.tw/"
+                                        target="_blank">焦點報導</a></li>
+        <li class="tboff" id="tag65"><a href="counter_footref.php?sid=114568&url=http://search.pchome.com.tw/"
+                                        target="_blank">熱搜排行</a></li>
+    </ul>
+    <div class="mbody" id="mbody3">&nbsp;</div>
+</div>
+<!-- 區塊三 End -->
+
+<!-- 跑馬燈Ⅱ開始 -->
+<aside class="center_adticker">
+    <ul id="ticker_sample2">
+        <li><a href="counter.php?sid=5828427" target="_blank"><u class="pop1">超夯</u></a>
+            <a href="counter.php?sid=5828428" target="_blank">香港4天限時↘5980起</a><b>|</b>
+            <a href="counter.php?sid=5828429" target="_blank">關島浪漫情人夜親親寶貝</a><b>|</b>
+        </li>
+        <li><a href="counter.php?sid=5828433" target="_blank"><u class="pop3">瘋搶</u></a>
+            <a href="counter.php?sid=5828434" target="_blank">觸控電霸行動電源$599</a><b>|</b>
+            <a href="counter.php?sid=5828435" target="_blank">九吋四核心平板電腦↘$4千起</a><b>|</b>
+        </li>
+        <li><a href="counter.php?sid=5828439" target="_blank"><u class="pop1">狂降</u></a>
+            <a href="counter.php?sid=5828440" target="_blank">白雷神巧克力↘5折</a><b>|</b>
+            <a href="counter.php?sid=5828441" target="_blank">７吋雙核手機平版↘$2千起</a><b>|</b>
+        </li>
+        <li><a href="counter.php?sid=5828445" target="_blank"><u class="pop1">下殺</u></a>
+            <a href="counter.php?sid=5828446" target="_blank">多功能紫光烘鞋器↘$138</a><b>|</b>
+            <a href="counter.php?sid=5828447" target="_blank">防身噴霧劑↘$185</a><b>|</b>
+        </li>
+        <li><a href="counter.php?sid=5828451" target="_blank"><u class="pop1">熱門</u></a>
+            <a href="counter.php?sid=5828452" target="_blank">象印保溫杯↘$645</a><b>|</b>
+            <a href="counter.php?sid=5828453" target="_blank">豆豆龍行動電源↘$430</a><b>|</b>
+        </li>
+        <li><a href="counter.php?sid=5828457" target="_blank"><u class="pop1">好康</u></a>
+            <a href="counter.php?sid=5828458" target="_blank">瘋玩</a><b>|</b>
+            <a href="counter.php?sid=5828459" target="_blank">暑假玩樂★最推薦景點</a><b>|</b>
+            <a href="counter.php?sid=5828460" target="_blank">夏天★免費吃雪糕!</a><b>|</b>
+        </li>
+    </ul>
+    <script language="javascript">
+        slideLine('ticker_sample2', 'li', 3000, 20, 20);
+    </script>
+</aside>
+<!-- 跑馬燈Ⅱ結束 -->
+
+<!-- 區塊四 Start
+    <li class="tboff" id="tag9"><a href="counter_footref.php?sid=5377810&url=https://www.puzzlefolks.com/Default.asp?utm_source=PCHOME&utm_medium=HOMEPAGE_district_0424&utm_campaign=04DISNEY" target="_blank">安心無毒</a></li>
+    -->
+<div class="mpage">
+    <p class="bdline"></p>
+    <ul class="mnav" id="mnav4">
+        <li class="tboff" id="tag9"><a
+                href="counter_footref.php?sid=25257&url=http://news.pchome.com.tw/cat/expense/hot"
+                target="_blank">消費</a></li>
+        <li class="tboff" id="tag10"><a
+                href="counter_footref.php?sid=25256&url=http://news.pchome.com.tw/cat/travel/hot" target="_blank">旅遊</a>
+        </li>
+        <li class="tboff" id="tag21"><a
+                href="counter_footref.php?sid=51111&url=http://news.pchome.com.tw/cat/internation/hot/" target="_blank">國際</a>
+        </li>
+        <li class="tboff" id="tag22"><a
+                href="counter_footref.php?sid=102548&url=http://news.pchome.com.tw/cat/finance/hot/"
+                target="_blank">財經</a></li>
+        <li class="tboff" id="tag66"><a
+                href="counter_footref.php?sid=25255&url=http://news.pchome.com.tw/cat/science/hot/"
+                target="_blank">科技</a></li>
+        <li class="tboff" id="tag32"><a href="counter_footref.php?sid=114070&url=http://icare.pchome.com.tw/"
+                                        target="_blank">愛健康</a></li>
+    </ul>
+    <div class="mbody" id="mbody4">&nbsp;</div>
+</div>
+<!-- 區塊四 End -->
+
+<!-- 區塊五 Start -->
+<div class="mpage">
+    <p class="bdline"></p>
+    <ul class="mnav" id="mnav5">
+        <li class="tboff" id="tag68"><a
+                href="counter_footref.php?sid=25254&url=http://mypaper.pchome.com.tw/index/search/keyword=&sfield=1&catalog=120"
+                target="_blank">美食情報</a></li>
+        <li class="tboff" id="tag69"><a
+                href="counter_footref.php?sid=114564&url=http://mypaper.pchome.com.tw/index/search/keyword=&sfield=1&catalog=110"
+                target="_blank">旅遊情報</a></li>
+        <li class="tboff" id="tag70"><a
+                href="counter_footref.php?sid=25253&url=http://mypaper.pchome.com.tw/index/search/keyword=&sfield=1&catalog=110"
+                target="_blank">影劇八卦</a></li>
+        <!-- <li class="tboff" id="tag43"><a href="counter_footref.php?sid=536&url=http://mypaper.pchome.com.tw/index/search/keyword=&sfield=1&catalog=150" target="_blank">家庭教室</a></li> -->
+        <li class="tboff" id="tag43"><a
+                href="counter_footref.php?sid=536&url=http://mypaper.pchome.com.tw/index/search/keyword=&sfield=1&catalog=160"
+                target="_blank">塑身美容</a></li>
+        <li class="tboff" id="tag71"><a href="counter_footref.php?sid=3052441&url=http://mypaper.pchome.com.tw/"
+                                        target="_blank">時事評論</a></li>
+        <li class="tboff" id="tag47"><a href="counter_footref.php?sid=20186&url=http://mypaper.pchome.com.tw/"
+                                        target="_blank">人氣文章</a></li>
+    </ul>
+    <div class="mbody" id="mbody5">&nbsp;</div>
+</div>
+<!-- 區塊五 End -->
+
+<!-- 區塊六 Start
+      <li class="tboff" id="tag44"><a href="counter_footref.php?sid=5594540&url=" target="_blank"></a></li>    
+    -->
+<div class="mpage">
+    <p class="bdline"></p>
+    <ul class="mnav" id="mnav6">
+        <li class="tboff" id="tag41"><a href="counter_footref.php?sid=495008&url=http://movie.pchome.com.tw/"
+                                        target="_blank">電影約會</a></li>
+        <li class="tboff" id="tag30"><a href="counter_footref.php?sid=13188&url=http://beauty.pchome.com.tw/"
+                                        target="_blank">姊妹淘</a></li>
+        <li class="tboff" id="tag34"><a
+                href="counter_footref.php?sid=654&url=http://forum.pchome.com.tw/forum_index/59/"
+                target="_blank">麻辣話題</a></li>
+        <li class="tboff" id="tag31"><a href="counter_footref.php?sid=655&url=http://forum.pchome.com.tw/"
+                                        target="_blank">正妹貼圖</a></li>
+        <li class="tboff" id="tag13"><a href="counter_footref.php?sid=658&url=http://travel.pchome.com.tw"
+                                        target="_blank">搞怪旅行</a></li>
+        <li class="tboff" id="tag44"><a href="counter_footref.php?sid=659&url=http://kaza.pchome.com.tw/"
+                                        target="_blank">美圖讚讚</a></li>
+    </ul>
+    <div class="mbody" id="mbody6">&nbsp;</div>
+</div>
+<!-- 區塊六 End -->
+
+<!-- 區塊6.5 Start
+    原本的新聞投票區塊<li class="tboff" id="tag45"><a href="counter_footref.php?sid=125247&url=http://news.pchome.com.tw/vote" target="_blank">今日民意</a></li>
+    <li class="tboff" id="tag46"><a href="counter_footref.php?sid=5045159&url=http://car.pchome.com.tw/" target="_blank">瘋殺特賣</a></li>
+    -->
+<div class="mpage">
+    <p class="bdline"></p>
+    <ul class="mnav" id="mnav65">
+        <li class="tboff" id="tag37"><a
+                href="counter_footref.php?sid=119010&url=http://news.pchome.com.tw/cat/healthcare/hot" target="_blank">樂活保健</a>
+        </li>
+        <li class="tboff" id="tag48"><a href="counter_footref.php?sid=569&url=http://news.pchome.com.tw/media/tvbs"
+                                        target="_blank">TVBS</a></li>
+        <li class="tboff" id="tag33"><a href="counter_footref.php?sid=339464&url=http://news.pchome.com.tw/media/ettv"
+                                        target="_blank">東森新聞</a></li>
+        <li class="tboff" id="tag42"><a href="counter_footref.php?sid=509623&url=http://news.pchome.com.tw/media/ftv"
+                                        target="_blank">民視新聞</a></li>
+        <li class="tboff" id="tag45"><a
+                href="counter_footref.php?sid=125247&url=http://news.pchome.com.tw/media/awakening"
+                target="_blank">台灣醒報</a></li>
+        <li class="tboff" id="tag46"><a href="counter_footref.php?sid=123936&url=http://news.pchome.com.tw/media/app01"
+                                        target="_blank">APP01</a></li>
+    </ul>
+    <div class="mbody" id="mbody65">&nbsp;</div>
+</div>
+<!-- 區塊6.5 End -->
+
+<!-- P幣尋寶樂 start -->
+
+<div class="pcoinad">
+    <div class="todayer">今日尋寶：<a>慘遭封口</a><b class="coinvol"><em></em>x3</b></div>
+</div>
+<!-- P幣尋寶樂 end -->
+
+<!-- 區塊七 Start -->
+<div class="mpage">
+    <p class="bdline"></p>
+    <ul class="mnav" id="mnav7">
+        <li class="tboff" id="tag11"><a href="counter_footref.php?sid=1122463&url=http://news.pchome.com.tw/"
+                                        target="_blank">熱門新聞</a></li>
+        <li class="tboff" id="tag12"><a href="counter_footref.php?sid=541&url=http://photo.pchome.com.tw/"
+                                        target="_blank">人氣相簿</a></li>
+        <li class="tboff" id="tag15"><a
+                href="counter_footref.php?sid=556&url=http://car.pchome.com.tw/topic.html?topic_id=1" target="_blank">促銷車款</a>
+        </li>
+        <li class="tboff" id="tag16"><a href="counter_footref.php?sid=557&url=http://forum.pchome.com.tw/"
+                                        target="_blank">火熱話題</a></li>
+        <li class="tboff" id="tag17"><a href="counter_footref.php?sid=559&url=http://kaza.pchome.com.tw/?ref=pchome_ad"
+                                        target="_blank">超夯拍拍</a></li>
+        <li class="tboff" id="tag18"><a href="counter_footref.php?sid=565&url=http://travel.pchome.com.tw/srh_tour.html"
+                                        target="_blank">環遊世界</a></li>
+    </ul>
+    <div class="mbody" id="mbody7">&nbsp;</div>
+</div>
+<!-- 區塊七 End -->
+
+</div>
+<!-- 中欄 end -->
+<!-- 右欄 start -->
+<div class="sidebar_right">
+
+    <!-- 右欄置頂廣告 start -->
+    <!--<aside class="right_finder"><a href="counter_footref.php?sid=3459689&url=http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_default~718053"><img src="img/migrate_35030.jpg" border="0"></a></aside>-->
+    <!-- 右欄置頂廣告 end -->
+
+    <!-- 右欄置頂 擴張tbar + 每日一問 start (org: 210px, short: 185px)-->
+
+    <div class="right_adtop">
+        <!--每日一問活動 START -->
+        <!--每日一問活動 START -->
+        <style>
+            .ad_qa {
+                display: block;
+                position: relative;
+                width: 350px;
+                height: 70px;
+                background: url(img/ad_qabg.gif) 0 0 no-repeat;
+                margin-bottom: 5px
+            }
+
+            .ad_qa p {
+                display: block;
+                width: 100%;
+                height: 35px;
+                line-height: 35px;
+                overflow: hidden;
+                font-size: 16px;
+                color: #fff;
+                text-indent: 75px;
+                font-weight: bold;
+            }
+
+            .ad_qa p {
+                text-shadow: 1px 1px #000;
+            }
+
+            .ad_qa form {
+                font-family: Tahoma;
+                font-size: 12px;
+                margin: 9px 0 0 70px;
+            }
+
+            .ad_qa form input[type="radio"], .ad_qa form label {
+                vertical-align: middle;
+            }
+
+            .ad_qa form input[type="radio"] {
+                -webkit-margin: 3px 0px 0px 8px;
+            }
+
+            .ad_qa img {
+                position: absolute;
+                bottom: 7px;
+                right: 6px;
+                z-index: auto;
+                cursor: pointer;
+            }
+        </style>
+        <script type="text/javascript">
+            $(function () {
+                $('#btn_send_computer').bind("click", function (event) {
+                    event.preventDefault();
+                    var ans = $('input[name="choice"]:checked').length;
+                    if (typeof ans <= 0) {
+                        alert("請選擇答案!!");
+                    } else {
+                        $('#QA_act_form').submit();
+                    }
+                });
+            });
+        </script>
+        <div id="qaform" class="ad_qa">
+            <p>Liddy真是個『電燈泡』怎麼說？</p>
+
+            <form name="QA_act_form" id="QA_act_form" method="post" action="../event_school/quick/index.html"
+                  target="_blank">
+                <input id="C1" type="radio" name="choice" value="C1"><label for="C1">Third arm</label>
+                <input id="C2" type="radio" name="choice" value="C2"><label for="C2">Light</label>
+            </form>
+            <img id="btn_send_computer" src="img/ad_qabtn.gif">
+        </div>
+        <!--每日一問活動 End-->
+
+        <!--每日一問活動 End-->
+
+        <!-- 右欄 t-bar start -->
+        <aside class="right_ad26" id="ad_flow"><!-- 26_pchome_online_h start --><!-- 26_pchome_online_h start --><a
+                href="http://adcl.pchome.com.tw/clickAd2.html?q=26~pchome_online_h~763800" target="_blank"><img
+                border="0" src="http://pic.adver.com.tw/adpics/pic_763800_477166.jpg"/></a><!-- 26_pchome_online_h end -->
+            <!-- 26_pchome_online_h end --></aside>
+        <!-- 右欄 t-bar end -->
+    </div>
+    <!-- 右欄置頂 擴張tbar + 每日一問 end -->
+
+    <!-- 右欄 大看板 start -->
+    <aside class="right_ad11">
+        <!-- 11_pchome_online_h start --><a href="http://adcl.pchome.com.tw/clickAd2.html?q=11~pchome_online_h~782291"
+                                            target="_blank"><img border="0"
+                                                                 src="http://pic.adver.com.tw/adpics/pic_782291_493114.jpg"/></a><!-- 11_pchome_online_h end -->
+    </aside>
+    <!-- 右欄 大看板 end -->
+
+    <!-- 右欄 大買家頁籤 start -->
+    <aside class="right_ad201404">
+        <span class="tblogo">超值專區</span>
+        <!-- 78_pchome_online_h start --><!-- 78_pchome_online_h start --><!-- type04 --><span class="tbon"
+                                                                                               name="ad_page"
+                                                                                               onMouseover="page_move(this);"
+                                                                                               style="float:left;"><a
+            href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~762956" target="_blank">每日好康↘</a></span>
+
+        <div class="type4" id="sstabnew02" name="ad_page_cont">
+            <ul>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~762957" target="_blank"><img
+                        src="http://pic.adver.com.tw/adpics/pic_762944_476511.jpg"></a><a
+                        href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~762958" target="_blank"><img
+                        src="http://pic.adver.com.tw/adpics/pic_762944_476510.jpg"></a><a
+                        href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~762959" target="_blank"><b>•華航精緻旅展★8100起</b></a><a
+                        href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~762960" target="_blank"><b>•季節限定▼馬祖藍眼淚</b></a><a
+                        href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~762961" target="_blank"><b>•暑假遊韓特惠1萬起</b></a><a
+                        href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~762962" target="_blank"><b>•★來一夏好康活動★</b></a>
+                </li>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~762963" target="_blank"><img
+                        src="http://pic.adver.com.tw/adpics/pic_762944_476509.jpg"></a><a
+                        href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~762964" target="_blank"><img
+                        src="http://pic.adver.com.tw/adpics/pic_762944_476508.jpg"></a><a
+                        href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~762965" target="_blank"><b>•紐約機票↘下殺13656起</b></a><a
+                        href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~762966" target="_blank"><b>•暑假早鳥GO日本↘24900起</b></a><a
+                        href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~762967" target="_blank"><b>•澎湖花火節景觀民宿1800起</b></a><a
+                        href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~762968" target="_blank"><b>•曼谷★$4999起</b></a>
+                </li>
+            </ul>
+        </div>
+        <!-- type04 -->
+        <script language="JavaScript"></script>
+        <!-- type04 --><span class="tbon" name="ad_page" onMouseover="page_move(this);" style="float:right;"><a
+            href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~764362" target="_blank">好康特賣</a></span>
+
+        <div class="type4" id="sstabnew02" name="ad_page_cont">
+            <ul>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~764363" target="_blank"><img
+                        src="http://pic.adver.com.tw/adpics/pic_764361_477889.jpg"></a><a
+                        href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~764364" target="_blank"><img
+                        src="http://pic.adver.com.tw/adpics/pic_764361_477888.jpg"></a><a
+                        href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~764365" target="_blank"><b>•26吋極品防身
+                    隨身攜帶！</b></a><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~764366"
+                                    target="_blank"><b>•雅痞休旅下殺↘49萬起</b></a><a
+                        href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~764367" target="_blank"><b>•頂級TEANA2.0
+                    僅僅跑6.5萬</b></a><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~764368"
+                                      target="_blank"><b>•BMW 320I 最後優惠價倒數</b></a></li>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~764369" target="_blank"><img
+                        src="http://pic.adver.com.tw/adpics/pic_764361_477887.jpg"></a><a
+                        href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~764370" target="_blank"><img
+                        src="http://pic.adver.com.tw/adpics/pic_764361_477886.jpg"></a><a
+                        href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~764371" target="_blank"><b>•超殺GOLF超質選↘50萬有找</b></a><a
+                        href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~764372" target="_blank"><b>•變形大黃蜂
+                    價錢最迷你</b></a><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~764373"
+                                    target="_blank"><b>•全視線組合 夜間清晰無死角</b></a><a
+                        href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~764374" target="_blank"><b>•BMW
+                    318I 限量紅色款</b></a></li>
+            </ul>
+        </div>
+        <!-- type04 -->
+        <script language="JavaScript"></script>
+        <!-- 78_pchome_online_h end --><!-- 78_pchome_online_h end -->
+        <script language="javascript">
+            function getElementsByName_iefix(tag, name) {
+                var elem = document.getElementsByTagName(tag);
+                var arr = new Array();
+                for (i = 0, iarr = 0; i < elem.length; i++) {
+                    att = elem[i].getAttribute("name");
+                    if (att == name) {
+                        arr[iarr] = elem[i];
+                        iarr++;
+                    }
+                }
+                return arr;
+            }
+            var AdPage = getElementsByName_iefix("span", "ad_page");
+            var AdPageCont = getElementsByName_iefix("div", "ad_page_cont");
+            var AdCount = AdPage.length;
+            var radom = Math.floor(Math.random() * 2);
+
+            function page_move(pos) {
+                for (j = 0; j < AdCount; j++) {
+                    if (AdPage[j] == pos) {
+                        AdPage[j].className = 'tbon';
+                        AdPageCont[j].style.visibility = 'visible';
+                    } else {
+                        AdPage[j].className = 'tboff';
+                        AdPageCont[j].style.visibility = 'hidden';
+                    }
+                }
+            }
+            page_move(AdPage[radom]);
+        </script>
+    </aside>
+    <!-- 右欄 大買家頁籤 end -->
+
+    <!-- 右欄 EC專區 三圖三標 start -->
+    <aside class="ad_ec006">
+        <i>
+            <!-- 111_pchome_online_h start --><!-- 111_pchome_online_h start --><u id="ec006p_a_0" style="left:-1px"
+                                                                                   class=""
+                                                                                   onmouseover="ec006_slide('a',0);"><a
+                href="http://adcl.pchome.com.tw/clickAd2.html?q=111~pchome_online_h~779355" target="_blank">Fashion
+            Cookie</a></u>
+            <script language="JavaScript"></script>
+            <!-- 111_pchome_online_h end --><!-- 111_pchome_online_h end -->
+            <ul id="ec006_a_0" class="hi"><!-- 61_pchome_online_h start --><!-- 61_pchome_online_h start -->
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=61~pchome_online_h~779359" target="_blank"><img
+                        src="http://pic.adver.com.tw/adpics/blank.gif"
+                        img_data="http://pic.adver.com.tw/adpics/20140618151201_81380.jpg"><u>【小資最愛】彈性美型襯衫</u><em>$299</em></a>
+                </li>
+                <script language="JavaScript"></script>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=61~pchome_online_h~779361" target="_blank"><img
+                        src="http://pic.adver.com.tw/adpics/blank.gif"
+                        img_data="http://pic.adver.com.tw/adpics/20140617175126_34686.jpg"><u>窄版拼接★造型T現折300 </u><em>$249</em></a>
+                </li>
+                <script language="JavaScript"></script>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=61~pchome_online_h~779364" target="_blank"><img
+                        src="http://pic.adver.com.tw/adpics/blank.gif"
+                        img_data="http://pic.adver.com.tw/adpics/20140617175126_26214.jpg"><u>【通通半價】全尺寸印花背心 </u><em>$149</em></a>
+                </li>
+                <script language="JavaScript"></script>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=61~pchome_online_h~779357" target="_blank"><img
+                        src="http://pic.adver.com.tw/adpics/blank.gif"
+                        img_data="http://pic.adver.com.tw/adpics/20140618151307_83804.jpg"><u>【限時】經典白襯衫</u><em>$799</em></a>
+                </li>
+                <script language="JavaScript"></script>
+                <!-- 61_pchome_online_h end --><!-- 61_pchome_online_h end --></ul>
+            <!-- 112_pchome_online_h start --><!-- 112_pchome_online_h start --><u id="ec006p_a_1" style="left:115px;"
+                                                                                   class=""
+                                                                                   onmouseover="ec006_slide('a',1);"><a
+                href="http://adcl.pchome.com.tw/clickAd2.html?q=112~pchome_online_h~778328" target="_blank">本週最殺</a></u>
+            <script language="JavaScript"></script>
+            <!-- 112_pchome_online_h end --><!-- 112_pchome_online_h end -->
+            <ul id="ec006_a_1" class="hi"><!-- 62_pchome_online_h start --><!-- 62_pchome_online_h start -->
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=62~pchome_online_h~778337" target="_blank"><img
+                        src="http://pic.adver.com.tw/adpics/blank.gif"
+                        img_data="http://pic.adver.com.tw/adpics/20140616184935_36181.jpg"><u>YARIS 頂級S版 小型房車 </u><em>37.8萬</em></a>
+                </li>
+                <script language="JavaScript"></script>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=62~pchome_online_h~778329" target="_blank"><img
+                        src="http://pic.adver.com.tw/adpics/blank.gif"
+                        img_data="http://pic.adver.com.tw/adpics/20140616184935_55565.jpg"><u>時尚休旅8人座
+                    雙彩內裝 </u><em>140萬起</em></a></li>
+                <script language="JavaScript"></script>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=62~pchome_online_h~778331" target="_blank"><img
+                        src="http://pic.adver.com.tw/adpics/blank.gif"
+                        img_data="http://pic.adver.com.tw/adpics/20140616184935_48132.jpg"><u>BMW 325I硬頂敞篷低調享受 </u><em>1??萬↘</em></a>
+                </li>
+                <script language="JavaScript"></script>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=62~pchome_online_h~778336" target="_blank"><img
+                        src="http://pic.adver.com.tw/adpics/blank.gif"
+                        img_data="http://pic.adver.com.tw/adpics/20140616184935_89867.jpg"><u>限量下殺↘LEXUS 2折 </u><em>21.8萬↘</em></a>
+                </li>
+                <script language="JavaScript"></script>
+                <!-- 62_pchome_online_h end --><!-- 62_pchome_online_h end --></ul>
+            <!-- 113_pchome_online_h start --><!-- 113_pchome_online_h start --><u id="ec006p_a_2" style="left:231px;"
+                                                                                   class=""
+                                                                                   onmouseover="ec006_slide('a',2);"><a
+                href="http://adcl.pchome.com.tw/clickAd2.html?q=113~pchome_online_h~786652"
+                target="_blank">好吃宅配網</a></u>
+            <script language="JavaScript"></script>
+            <!-- 113_pchome_online_h end --><!-- 113_pchome_online_h end -->
+            <ul id="ec006_a_2" class="hi"><!-- 63_pchome_online_h start --><!-- 63_pchome_online_h start -->
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=63~pchome_online_h~786659" target="_blank"><img
+                        src="http://pic.adver.com.tw/adpics/blank.gif"
+                        img_data="http://pic.adver.com.tw/adpics/20140624193714_51652.jpg"><u>屏東超大金煌芒果 </u><em>$99</em></a>
+                </li>
+                <script language="JavaScript"></script>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=63~pchome_online_h~786662" target="_blank"><img
+                        src="http://pic.adver.com.tw/adpics/blank.gif"
+                        img_data="http://pic.adver.com.tw/adpics/20140624193714_16358.jpg"><u>華盛頓西北紅櫻桃 </u><em>$398</em></a>
+                </li>
+                <script language="JavaScript"></script>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=63~pchome_online_h~786657" target="_blank"><img
+                        src="http://pic.adver.com.tw/adpics/blank.gif"
+                        img_data="http://pic.adver.com.tw/adpics/20140624193714_86198.jpg"><u>福義軒系列大集合 </u><em>$139</em></a>
+                </li>
+                <script language="JavaScript"></script>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=63~pchome_online_h~786658" target="_blank"><img
+                        src="http://pic.adver.com.tw/adpics/blank.gif"
+                        img_data="http://pic.adver.com.tw/adpics/20140624193714_15212.jpg"><u>福義軒大包手工蛋捲 </u><em>$219</em></a>
+                </li>
+                <script language="JavaScript"></script>
+                <!-- 63_pchome_online_h end --><!-- 63_pchome_online_h end --></ul>
+        </i>
+        <b></b>
+        <i>
+            <!-- 114_pchome_online_h start --><!-- 114_pchome_online_h start --><u id="ec006p_b_0" style="left:-1px"
+                                                                                   class=""
+                                                                                   onmouseover="ec006_slide('b',0);"><a
+                href="http://adcl.pchome.com.tw/clickAd2.html?q=114~pchome_online_h~786371" target="_blank">momo購物網</a></u>
+            <script language="JavaScript"></script>
+            <!-- 114_pchome_online_h end --><!-- 114_pchome_online_h end -->
+            <ul id="ec006_b_0" class="hi"><!-- 64_pchome_online_h start --><!-- 64_pchome_online_h start -->
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=64~pchome_online_h~786375" target="_blank"><img
+                        src="http://pic.adver.com.tw/adpics/blank.gif"
+                        img_data="http://pic.adver.com.tw/adpics/20140624183404_75977.jpg"><u>MARS
+                    20吋折疊車 </u><em>$1880</em></a></li>
+                <script language="JavaScript"></script>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=64~pchome_online_h~786381" target="_blank"><img
+                        src="http://pic.adver.com.tw/adpics/blank.gif"
+                        img_data="http://pic.adver.com.tw/adpics/20140624183404_33275.jpg"><u>舒適POLO杉/短褲 </u><em>99up</em></a>
+                </li>
+                <script language="JavaScript"></script>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=64~pchome_online_h~786380" target="_blank"><img
+                        src="http://pic.adver.com.tw/adpics/blank.gif"
+                        img_data="http://pic.adver.com.tw/adpics/20140624183404_76195.jpg"><u>藍光熱力除毛儀-旗艦款 </u><em>$10710</em></a>
+                </li>
+                <script language="JavaScript"></script>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=64~pchome_online_h~786373" target="_blank"><img
+                        src="http://pic.adver.com.tw/adpics/blank.gif"
+                        img_data="http://pic.adver.com.tw/adpics/20140624183404_95694.jpg"><u>麥雪爾全館3折起 </u><em>380up</em></a>
+                </li>
+                <script language="JavaScript"></script>
+                <!-- 64_pchome_online_h end --><!-- 64_pchome_online_h end --></ul>
+            <!-- 115_pchome_online_h start --><!-- 115_pchome_online_h start --><u id="ec006p_b_1" style="left:115px;"
+                                                                                   class=""
+                                                                                   onmouseover="ec006_slide('b',1);"><a
+                href="http://adcl.pchome.com.tw/clickAd2.html?q=115~pchome_online_h~786320" target="_blank">好康報報</a></u>
+            <script language="JavaScript"></script>
+            <!-- 115_pchome_online_h end --><!-- 115_pchome_online_h end -->
+            <ul id="ec006_b_1" class="hi"><!-- 65_pchome_online_h start --><!-- 65_pchome_online_h start -->
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=65~pchome_online_h~786321" target="_blank"><img
+                        src="http://pic.adver.com.tw/adpics/blank.gif"
+                        img_data="http://pic.adver.com.tw/adpics/20140624165426_43526.jpg"><u>觀霧雪霸森呼吸 </u><em>1188起</em></a>
+                </li>
+                <script language="JavaScript"></script>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=65~pchome_online_h~786325" target="_blank"><img
+                        src="http://pic.adver.com.tw/adpics/blank.gif"
+                        img_data="http://pic.adver.com.tw/adpics/20140624165426_90647.jpg"><u>樂遊小琉球雙人遊 </u><em>3388起</em></a>
+                </li>
+                <script language="JavaScript"></script>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=65~pchome_online_h~786324" target="_blank"><img
+                        src="http://pic.adver.com.tw/adpics/blank.gif"
+                        img_data="http://pic.adver.com.tw/adpics/20140624165426_96093.jpg"><u>小烏來天空步道 </u><em>1399起</em></a>
+                </li>
+                <script language="JavaScript"></script>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=65~pchome_online_h~786328" target="_blank"><img
+                        src="http://pic.adver.com.tw/adpics/blank.gif"
+                        img_data="http://pic.adver.com.tw/adpics/20140624165426_84975.jpg"><u>放鬆森呼吸∼棲蘭神木 </u><em>1699起</em></a>
+                </li>
+                <script language="JavaScript"></script>
+                <!-- 65_pchome_online_h end --><!-- 65_pchome_online_h end --></ul>
+            <!-- 116_pchome_online_h start --><!-- 116_pchome_online_h start --><u id="ec006p_b_2" style="left:231px;"
+                                                                                   class=""
+                                                                                   onmouseover="ec006_slide('b',2);"><a
+                href="http://adcl.pchome.com.tw/clickAd2.html?q=116~pchome_online_h~765396" target="_blank">買車</a></u>
+            <script language="JavaScript"></script>
+            <!-- 116_pchome_online_h end --><!-- 116_pchome_online_h end -->
+            <ul id="ec006_b_2" class="hi"><!-- 66_pchome_online_h start --><!-- 66_pchome_online_h start -->
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=66~pchome_online_h~761889" target="_blank"><img
+                        src="http://pic.adver.com.tw/adpics/blank.gif"
+                        img_data="http://pic.adver.com.tw/adpics/20140528122759_92100.jpg"><u>福斯★擁有速度更帶來安全80萬起 </u><em>80萬起</em></a>
+                </li>
+                <script language="JavaScript"></script>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=66~pchome_online_h~765399" target="_blank"><img
+                        src="http://pic.adver.com.tw/adpics/blank.gif"
+                        img_data="http://pic.adver.com.tw/adpics/20140530192117_61935.jpg"><u>VW頂級旗艦
+                    一口價30萬 </u><em>30萬</em></a></li>
+                <script language="JavaScript"></script>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=66~pchome_online_h~761895" target="_blank"><img
+                        src="http://pic.adver.com.tw/adpics/blank.gif"
+                        img_data="http://pic.adver.com.tw/adpics/20140528122759_34139.jpg"><u>限時下殺↘AUDI只要120萬起 </u><em>120萬↘</em></a>
+                </li>
+                <script language="JavaScript"></script>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=66~pchome_online_h~765400" target="_blank"><img
+                        src="http://pic.adver.com.tw/adpics/blank.gif"
+                        img_data="http://pic.adver.com.tw/adpics/20140530192117_51709.jpg"><u>AUDI A4 不用100萬！ </u><em>106萬↘</em></a>
+                </li>
+                <script language="JavaScript"></script>
+                <!-- 66_pchome_online_h end --><!-- 66_pchome_online_h end --></ul>
+        </i>
+    </aside>
+    <script type="text/javascript">
+        reset_ec006_page();
+    </script>
+    <!-- 右欄 EC專區 三圖三標 end -->
+
+    <!-- 右欄 生活人氣王 消費情報 start -->
+    <div class="right_adlist">
+        <aside class="right_ad45">
+            <b>生活人氣王</b>
+            <!-- 45_pchome_online_h start --><!-- 45_pchome_online_h start --><span><a
+                href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~780007" target="_blank"><img
+                src="http://pic.adver.com.tw/adpics/pic_780006_491218.jpg"></a><ul>
+            <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~780008"
+                   target="_blank">闖關得好禮等你來報名</a></li>
+            <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~780009" target="_blank">打卡摸彩大放送</a>
+            </li>
+            <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~780010"
+                   target="_blank">職場反歧視大獎等你拿</a></li>
+            <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~780011"
+                   target="_blank">支持就業好禮拿不完</a></li>
+            <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~780012" target="_blank">現場問答獎金20000元</a>
+            </li>
+            <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~780013"
+                   target="_blank">機智快答送7-11禮卷</a></li>
+        </ul></span>
+            <script language="JavaScript"></script>
+            <span><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~766720" target="_blank"><img
+                    src="http://pic.adver.com.tw/adpics/pic_766719_479687.jpg"></a><ul>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~766721" target="_blank">7-11禮卷大放送</a>
+                </li>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~766722" target="_blank">第一手車訊看這裡</a>
+                </li>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~766723" target="_blank">你不可不知的車新聞</a>
+                </li>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~766724" target="_blank">BMW搶先看太牛逼</a>
+                </li>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~766725" target="_blank">按讚FB即參加抽獎</a>
+                </li>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~766726"
+                       target="_blank">贈品拿到手軟</a></li>
+            </ul></span>
+            <script language="JavaScript"></script>
+            <span><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~782267" target="_blank"><img
+                    src="http://pic.adver.com.tw/adpics/pic_782263_493105.gif"></a><ul>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~782268" target="_blank">G1X纇單眼
+                    大進化</a></li>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~782269" target="_blank">旗艦級高畫質類單眼</a>
+                </li>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~782270" target="_blank">細節↗景深↗高感光</a>
+                </li>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~782271" target="_blank">上掀180度觸控螢幕</a>
+                </li>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~782272" target="_blank">1.5吋超大影像感測器</a>
+                </li>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~782273" target="_blank">全新★遙控拍攝功能</a>
+                </li>
+            </ul></span>
+            <script language="JavaScript"></script>
+            <!-- 45_pchome_online_h end --><!-- 45_pchome_online_h end -->
+        </aside>
+        <aside class="right_ad48">
+            <!-- 48_new_online_h_project start -->
+            <b>消費情報</b>
+            <!-- 48_pchome_online_h start --><!-- 48_pchome_online_h start --><span><a
+                href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~766715" target="_blank"><img
+                src="http://pic.adver.com.tw/adpics/pic_766708_479683.jpg"></a><ul>
+            <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~766716" target="_blank">免費送禮卷</a>
+            </li>
+            <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~766717" target="_blank">車迷看過來</a>
+            </li>
+            <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~766718" target="_blank">7-11
+                200元</a></li>
+        </ul></span>
+            <script language="JavaScript"></script>
+            <span><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~780752" target="_blank"><img
+                    src="http://pic.adver.com.tw/adpics/pic_780534_491983.jpg"></a><ul>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~780753"
+                       target="_blank">超可愛正妹</a></li>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~780754"
+                       target="_blank">命運就在你手</a></li>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~780755"
+                       target="_blank">彩繪命運小贈禮</a></li>
+            </ul></span>
+            <script language="JavaScript"></script>
+            <span><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~762838" target="_blank"><img
+                    src="http://pic.adver.com.tw/adpics/pic_762837_476505.jpg"></a><ul>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~762839"
+                       target="_blank">馬上出國去玩囉</a></li>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~762840"
+                       target="_blank">殺爆！快來看！</a></li>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~762841"
+                       target="_blank">美麗OL下海去</a></li>
+            </ul></span>
+            <script language="JavaScript"></script>
+            <span><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~762833" target="_blank"><img
+                    src="http://pic.adver.com.tw/adpics/pic_762832_476504.jpg"></a><ul>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~762834"
+                       target="_blank">小妞好想出去玩</a></li>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~762835"
+                       target="_blank">比基尼海島風情</a></li>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~762836"
+                       target="_blank">OL渡假★好美</a></li>
+            </ul></span>
+            <script language="JavaScript"></script>
+            <span><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~779804" target="_blank"><img
+                    src="http://pic.adver.com.tw/adpics/pic_779803_491145.jpg"></a><ul>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~779805"
+                       target="_blank">金門★特搜美食</a></li>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~779806"
+                       target="_blank">澎湖★最美海灣</a></li>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~779807"
+                       target="_blank">新竹★雪霸觀霧</a></li>
+            </ul></span>
+            <script language="JavaScript"></script>
+            <span><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~778293" target="_blank"><img
+                    src="http://pic.adver.com.tw/adpics/pic_778176_489755.jpg"></a><ul>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~778294"
+                       target="_blank">A4最新價格</a></li>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~778295"
+                       target="_blank">第一手車價快訊</a></li>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~778296"
+                       target="_blank">100元大方送</a></li>
+            </ul></span>
+            <script language="JavaScript"></script>
+            <span><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~773578" target="_blank"><img
+                    src="http://pic.adver.com.tw/adpics/pic_773577_486396.gif"></a><ul>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~773579"
+                       target="_blank">★開戶送書★</a></li>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~773580" target="_blank">雪球股獲利15%</a>
+                </li>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~773581"
+                       target="_blank">微笑曲線賺百萬</a></li>
+            </ul></span>
+            <script language="JavaScript"></script>
+            <span><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~763580" target="_blank"><img
+                    src="http://pic.adver.com.tw/adpics/pic_763579_476913.gif"></a><ul>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~763581"
+                       target="_blank">七年級生豆花妹</a></li>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~763582"
+                       target="_blank">變身~宅男女神</a></li>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~763583"
+                       target="_blank">蔡黃汝省錢三招</a></li>
+            </ul></span>
+            <script language="JavaScript"></script>
+            <!-- 48_pchome_online_h end --><!-- 48_pchome_online_h end -->
+        </aside>
+    </div>
+    <!-- 右欄 生活人氣王 消費情報 end -->
+    <!-- 右欄底部 股市廣告 start -->
+
+    <script type="text/javascript">
+        var invest_obj = {0: {'title': '小資女理財從股票開始 專挑高殖利率股', 'pic': 'http://w6.pchome.com.tw/img/stockinvest/0.jpg', 'desc': '從小因為父親喜歡玩股票，幾次慘賠的經驗，讓家中總是愁雲慘霧，因此個人對股票沒有好感，寧願把錢存在銀行裡，這樣的刻板印象直到進入職場才有了改變', 'link': 'counter_footref.php?sid=661&url=http://pchome.syspower.com.tw/column/sto99/20120330/133309348341.html'}, 1: {'title': '投資原物料股 快樂退休抗通膨', 'pic': 'http://w6.pchome.com.tw/img/stockinvest/1.jpg', 'desc': '近十年來，受到全球氣候改變及耕種面積減少的影響，原物料價格已上漲好久了，俗稱「黃小玉」的黃豆、小麥、玉米價格早已水漲船高。而台灣更在油電雙漲', 'link': 'counter_footref.php?sid=662&url=http://pchome.syspower.com.tw/column/sto99/20120626/134069079684.html'}, 2: {'title': '買車代步不是夢', 'pic': 'http://w6.pchome.com.tw/img/stockinvest/2.jpg', 'desc': 'Amanda因為工作需要，再加上個人喜歡旅遊，所以在她拿到駕照後，最大的願望就是買一輛車，除了代步之外，假日還可以和三五好友或家人，外出踏青', 'link': 'counter_footref.php?sid=663&url=http://pchome.syspower.com.tw/column/sto99/20120216/132938617422.html'}, 3: {'title': '財經主持人阿娟:重大利空進場好時機', 'pic': 'http://w6.pchome.com.tw/img/stockinvest/3.jpg', 'desc': '財經主持人陳斐娟從跑線十年經驗與投資賺賠間，悟出股市操作必勝法則，6500點以下、7500點以上是進出參考點，而重大利空事件就是低檔進場點。', 'link': 'counter_footref.php?sid=669&url=http://pchome.syspower.com.tw/column/sto15/20130304/136237912399.html'}, 4: {'title': '林義傑理財創業 兩年賺三倍', 'pic': 'http://w6.pchome.com.tw/img/stockinvest/4.jpg', 'desc': '超跑好手林義傑，場上是極地冒險運動家，場外則是一位投資及創業老手，不論是創業或投資，都繳出亮眼成績', 'link': 'counter_footref.php?sid=678&url=http://pchome.syspower.com.tw/column/sto15/20121017/135046988633.html'}, 5: {'title': '陳信宏操作當沖與全額交割股 小錢賺大錢 身價八千萬', 'pic': 'http://w6.pchome.com.tw/img/stockinvest/5.jpg', 'desc': '現年33歲股市贏家陳信宏，利用期現貨一分鐘領先指標操作當沖，並靠著財報與審閱公告的時間差進出全額交割股，年平均報酬率高達50％，現身價８千萬', 'link': 'counter_footref.php?sid=780&url=http://pchome.syspower.com.tw/column/sto15/20130816/137662894709.html'}};
+        var iary = [0, 1, 2, 3, 4, 5];
+        var rand = Math.floor(Math.random() * iary.length);
+        var now = new Date();
+        var time = now.getYear() + now.getMonth() + now.getDay() + now.getHours() + now.getMinutes() + now.getSeconds();
+        var rtit = invest_obj[rand]['title'];
+        var rimg = invest_obj[rand]['pic'] + '?' + time;
+        var rtxt = invest_obj[rand]['desc'];
+        var rurl = invest_obj[rand]['link'];
+        $(document).ready(function () {
+            $('#stock_invest .tit').html('<a target="_blank" href="' + rurl + '" title="' + rtit + '">' + rtit + '</a>');
+            $('#stock_invest .img').html('<a target="_blank" href="' + rurl + '"><span></span><img src="' + rimg + '" border="0" alt="' + rtit + '"></a>');
+            $('#stock_invest .txt').html('<a target="_blank" href="' + rurl + '">' + rtxt + '...<u>(詳全文)</u></a>');
+        });
+    </script>
+    <div id='stock_invest' class='newsboard'>
+
+        <div class='tit'></div>
+
+        <div class='img'></div>
+
+        <div class='txt'></div>
+
+    </div>
+    <!-- 右欄底部 股市廣告 end -->
+
+    <!-- 右欄底部 350*30廣告 start -->
+    <div id="stock_invest" class="newsboard2">
+        <a href="counter_footref.php?sid=783&url=http://news.pchome.com.tw/event/2014/worldcup"><img
+                src="img/right_ad_banner.jpg" border="0" width="335" height="100"></a>
+    </div>
+    <!-- 右欄底部 350*30廣告 end -->
+
+</div>
+<!-- 右欄 end -->
+<!-- 下欄 開始 -->
+<div class="sidebar_bottom">
+
+<!-- 旅行團 start -->
+<!-- 141_pchome_online_h start -->
+<style>.bottom_travel {
+    display: block;
+    border: 1px #dcdcdc solid;
+    width: 978px;
+    height: 188px;
+    margin: 0 0 10px 0;
+    overflow: hidden;
+}
+
+.bottom_travel ul {
+    display: block;
+    float: left;
+    margin: 0 0 0 -1px;
+    width: 318px;
+    height: 188px;
+    border-left: 1px #dcdcdc solid;
+    padding: 0 4px;
+}
+
+.bottom_travel ul li {
+    display: block;
+    line-height: 18px;
+    height: 18px;
+    width: 100%;
+    overflow: hidden;
+    margin: 2px 0;
+    *line-height: 13px;
+}
+
+.bottom_travel ul li a {
+    font-size: 13px;
+    color: #313131;
+    font-family: "微軟正黑體", "Trebuchet MS", Microsoft JhengHei, Arial, Helvetica, sans-serif;
+}
+
+.bottom_travel ul li a:hover b {
+    text-decoration: underline;
+    color: #ff0054
+}
+
+.bottom_travel ul li.img {
+    width: 100%;
+    height: 115px;
+    background: #eaeaea;
+    margin: 4px 0;
+}
+
+.bottom_travel ul li.img a:hover {
+    text-decoration: none
+}
+
+.bottom_travel ul li img {
+    width: 135px;
+    height: 115px;
+    padding: 0 5px 0 0;
+    float: left;
+}
+
+.bottom_travel ul li b {
+    display: block;
+    font-size: 15px;
+    line-height: 20px;
+    width: auto;
+    height: 39px;
+    overflow: hidden;
+    margin: 5px 5px 0 0;
+    color: #000;
+    *cursor: pointer
+}
+
+.bottom_travel ul li i {
+    display: block;
+    font-size: 11px;
+    font-style: normal;
+    line-height: 16px;
+    height: 32px;
+    overflow: hidden;
+    margin: 5px 5px 0 0;
+    *cursor: pointer
+}
+
+.bottom_travel ul li u {
+    float: right;
+    display: block;
+    font-size: 13px;
+    text-decoration: none;
+    color: #ff0054;
+    padding: 0 5px 0 0;
+    *cursor: pointer;
+    *margin-top: -13px
+}
+
+.bottom_travel ul li u em {
+    font-size: 13px;
+    color: #313131;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.bottom_travel ul li.img u {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 35px;
+    *margin-top: 0
+}
+
+.bottom_travel ul li.img u em {
+    font-size: 14px;
+}
+
+.bottom_travel > div {
+    float: left
+}
+
+.bottom_travel .ad_right {
+    float: right
+}</style>
+<script language="javascript">function chTravelAd(adarea) {
+    var randomVal = Math.floor(Math.random() * 10);
+    var travel_obj = document.getElementById(adarea);
+    if (randomVal > 5) {
+        var newimgobj = travel_obj.getElementsByTagName("div").item(0).cloneNode(true);
+        travel_obj.removeChild(travel_obj.getElementsByTagName("div").item(0));
+        travel_obj.appendChild(newimgobj);
+    }
+}</script>
+<div id="travel_area" class="bottom_travel">
+    <script language="JavaScript"></script>
+    <!-- 141_pchome_online_h end -->
+    <!-- 59_pchome_online_h start -->
+    <div>
+        <ul id="ad_785116">
+            <div name="travel_img">
+                <li class="img"><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~785117"
+                                   target="_blank"><img src="http://pic.adver.com.tw/adpics/pic_785116_495538.jpg"><b>摩登東京歡樂遊5天系列行程</b><i>暑假兒童不佔床減一萬；暢遊迪士尼.卡通主題館…等</i><u>$38,800<em>起</em></u></a>
+                </li>
+            </div>
+            <div name="travel_text">
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~785118" target="_blank">7/6江南8天第二人減一萬<u>$28,900<em>起</em></u></a>
+                </li>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~785119" target="_blank">7/14.16徐州.山東6天每人減4仟<u>$30,900<em>起</em></u></a>
+                </li>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~785120" target="_blank">下龍灣.天堂號5天,夏季促銷團<u>$27,900<em>起</em></u></a>
+                </li>
+            </div>
+        </ul>
+    </div>
+    <script language="javascript">chTravelAd("ad_785116");</script>
+    <script language="JavaScript"></script>
+    <div>
+        <ul id="ad_785145">
+            <div name="travel_img">
+                <li class="img"><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~785147"
+                                   target="_blank"><img src="http://pic.adver.com.tw/adpics/pic_785145_495543.jpg"><b>變形金剛電影票!!免費送!!!!</b><i>玩澳門宿豪華頂級酒店看變形金剛展!再送電影票!!!</i><u>$8,800<em>起</em></u></a>
+                </li>
+            </div>
+            <div name="travel_text">
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~785148" target="_blank">【奢華尊寵】香港半島頂級4日<u>$9,900<em>起</em></u></a>
+                </li>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~785149" target="_blank">【玩透北京】世界遺產+滑雪6日<u>$9,900<em>起</em></u></a>
+                </li>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~785150" target="_blank">【圓夢郵輪】歌詩達皇冠號11天<u>$79,900<em>起</em></u></a>
+                </li>
+            </div>
+        </ul>
+    </div>
+    <script language="javascript">chTravelAd("ad_785145");</script>
+    <script language="JavaScript"></script>
+    <!-- 59_pchome_online_h end -->
+    <!-- 59_pchome_index_D start -->
+    <div>
+        <ul id="ad_772612">
+            <div name="travel_img">
+                <li class="img"><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_D~772613"
+                                   target="_blank"><img src="http://pic.adver.com.tw/adpics/pic_772612_485668.jpg"><b>抽巴拉望三天兩夜自由行</b><i>【菲律賓】潛水地點可見到稀有海洋生物，擁有最美海…</i><u>$0<em>起</em></u></a>
+                </li>
+            </div>
+            <div name="travel_text">
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_D~772614" target="_blank">暑假玩瘋【東京】樂遊遊5日<u>$29,800<em>起</em></u></a>
+                </li>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_D~772615" target="_blank">華航精緻遊★送上網分享器<u>$14,250<em>起</em></u></a>
+                </li>
+                <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_D~772616" target="_blank">【台南】百年古厝　精選民宿<u>$1,600<em>起</em></u></a>
+                </li>
+            </div>
+        </ul>
+    </div>
+    <script language="javascript">chTravelAd("ad_772612");</script>
+    <script language="JavaScript"></script>
+    <!-- 59_pchome_index_D end -->
+    <!-- 142_pchome_online_h start --></div>
+<script language="javascript">    document.getElementById("travel_area").getElementsByTagName("div").item(3).className = "ad_right";</script>
+<script language="JavaScript"></script>
+<!-- 142_pchome_online_h end -->
+<!-- 旅行團 end -->
+<!--下方增長區 START-->
+<div class="mainextra">
+
+<!-- 區塊9 左半邊 Start -->
+<div class="main_leftbotm">
+
+    <!-- 區塊9-1 話題潮流 start -->
+
+    <script type="text/javascript">
+        $(function () {
+            var area91_obj = [
+                {"nickname": "linda", "pic": "http:\/\/w6.pchome.com.tw\/img\/73\/0.jpg", "feel": "12", "url": "counter.php?sid=5831400"},
+                {"nickname": "\u5431\u5431\u55b3\u55b3", "pic": "http:\/\/w6.pchome.com.tw\/img\/73\/1.jpg", "feel": "14", "url": "counter.php?sid=5831401"},
+                {"nickname": "weichi", "pic": "http:\/\/w6.pchome.com.tw\/img\/73\/2.jpg", "feel": "7", "url": "counter.php?sid=5831402"},
+                {"nickname": "Simon Hung", "pic": "http:\/\/w6.pchome.com.tw\/img\/73\/3.jpg", "feel": "26", "url": "counter.php?sid=5831403"},
+                {"nickname": "ashleyfeng815", "pic": "http:\/\/w6.pchome.com.tw\/img\/73\/4.jpg", "feel": "12", "url": "counter.php?sid=5831404"},
+                {"nickname": "Simon Hung", "pic": "http:\/\/w6.pchome.com.tw\/img\/73\/5.jpg", "feel": "15", "url": "counter.php?sid=5831405"},
+                {"nickname": "\u82b1\u5abd [\u25cf \u25b2 \u25cf]", "pic": "http:\/\/w6.pchome.com.tw\/img\/73\/6.jpg", "feel": "28", "url": "counter.php?sid=5831406"},
+                {"nickname": "\u5c0f\u6cbb", "pic": "http:\/\/w6.pchome.com.tw\/img\/73\/7.jpg", "feel": "15", "url": "counter.php?sid=5831407"},
+                {"nickname": "\u5a1b\u6a02\u7279\u6d3e\u54e1", "pic": "http:\/\/w6.pchome.com.tw\/img\/73\/8.jpg", "feel": "6", "url": "counter.php?sid=5831408"}
+            ]
+            var arr = [];
+            $.each(area91_obj, function (i, val) {
+                arr.push(i);
+            });
+            arr = $.shuffle(arr);
+
+            $('.overphoto').html('<a href="' + area91_obj[arr[0]]['url'] + '"><span class="phdetail"><span class="pop">讚數 ' + area91_obj[arr[0]]['feel'] + '</span><em class="from"><h6 href="' + area91_obj[arr[0]]['url'] + '" class="id">by ' + area91_obj[arr[0]]['nickname'] + '</h6></em></span><img src="' + area91_obj[arr[0]]['pic'] + '?140625053009"></a>');
+
+        });
+    </script>
+    <section class="lgblk_phto"><p class="xb_tit">超讚Kaza</p>
+
+        <span class="overphoto"></span>
+    </section>
+    <!-- 區塊9-1 話題潮流 end -->
+
+    <!-- 區塊9-2 文章關注 start -->
+
+    <script type="text/javascript">
+        $(function () {
+            var area92_header_obj = [
+                {"title": "\u53f0\u5317\u96fb\u5f71\u7bc0\u300a\u6c89\u9ed8\u7684\u5171\u8b00\u8005\u300b\uff1a\u4ed6\u5011\u90fd\u770b\u5230\u4e86\u554a\u3002", "img": "http:\/\/w6.pchome.com.tw\/img\/74\/0.jpg", "link": "counter.php?sid=5831370"},
+                {"title": "\u8ff7\u4eba\u7684\u5b87\u5b99\u7a7a\u9593....", "img": "http:\/\/w6.pchome.com.tw\/img\/74\/1.jpg", "link": "counter.php?sid=5831372"},
+                {"title": "3\u6b727\u500b\u6708\u7d00\u9304\u53c8\u6417\u86cb\u53c8\u53ef\u611b\u5230\u4e0d\u884c\u7684\u5c0f\u5b89\u4ed4", "img": "http:\/\/w6.pchome.com.tw\/img\/74\/2.jpg", "link": "counter.php?sid=5831374"},
+                {"title": "\u8292\u679c\u5976\u51cd\u6372", "img": "http:\/\/w6.pchome.com.tw\/img\/74\/3.jpg", "link": "counter.php?sid=5831376"},
+                {"title": "3\u6b727\u500b\u6708--\u7d19\u76d2\u53c8\u8b8a\u8eab\u70ba\u6efe\u73e0\u53f0", "img": "http:\/\/w6.pchome.com.tw\/img\/74\/4.jpg", "link": "counter.php?sid=5831378"}
+            ]
+            var arr = [0, 1, 2, 3, 4];
+            arr = $.shuffle(arr);
+
+            var area92_other_obj = [
+                {"title": "\u80fd\u609f\u900f\"\u6211\"\u82e5\u6beb\"\u5149\"\u55ce\uff1f", "link": "counter.php?sid=5831380"},
+                {"title": "103\u5e74\u5abd\u54aa\u751f\u65e5\u8a18\u4e8b", "link": "counter.php?sid=5831382"},
+                {"title": "\u7b2c\u4e00\u6b21......\u75db\u5230\u8b93\u6211\u60f3\u6b7b\u7684\u611f\u89ba", "link": "counter.php?sid=5831384"},
+                {"title": "\u80e1\u6912\u9905\u7684\u6ecb\u5473", "link": "counter.php?sid=5831386"},
+                {"title": "\u5beb\u5be6\u6cb9\u756b\u756b\u50cf", "link": "counter.php?sid=5831387"},
+                {"title": "\u5931\u6200\u5f8c\u6703\u505a\u7684\u4e8b\uff0d\u4e0a", "link": "counter.php?sid=5831388"},
+                {"title": "\u6211\u7684\u6797\u8449\u5976\u5976(\u5f35\u6b23\u6148)", "link": "counter.php?sid=5831389"},
+                {"title": "\u63ee\u7051\u7684\u4eba\u751f\u2026", "link": "counter.php?sid=5831390"},
+                {"title": "\u4eba\u6f6e\u591a\u5230\u7206\u7684\u3010Earnest Ice Cream\u3011", "link": "counter.php?sid=5831391"},
+                {"title": "\u300a\u793e\u8ad6\u300b\u6211\u5011\u662f\u8a72\u652f\u6301\u4e2d\u570b\u8ffd\u9010\u5168\u7403\u9738\u6b0a\u4e86\u55ce\uff1f", "link": "counter.php?sid=5831392"}
+            ]
+            var arr2 = [];
+            $.each(area92_other_obj, function (i, val) {
+                arr2.push(i);
+            });
+            arr2 = $.shuffle(arr2);
+
+            var rr = Math.floor(Math.random() * (1000 - 0));
+
+            //area1
+            $('#iurl1').attr('href', area92_header_obj[arr[0]]['link']);
+            $('#iimg1').attr('src', area92_header_obj[arr[0]]['img'] + '?' + rr);
+            $('#tit1').html('<a href="' + area92_header_obj[arr[0]]['link'] + '">' + area92_header_obj[arr[0]]['title'] + '</a>');
+            $('#li1').html('‧<a href="' + area92_other_obj[arr2[0]]['link'] + '">' + area92_other_obj[arr2[0]]['title'] + '</a>');
+            $('#li2').html('‧<a href="' + area92_other_obj[arr2[1]]['link'] + '">' + area92_other_obj[arr2[1]]['title'] + '</a>');
+            $('#li3').html('‧<a href="' + area92_other_obj[arr2[2]]['link'] + '">' + area92_other_obj[arr2[2]]['title'] + '</a>');
+            $('#li4').html('‧<a href="' + area92_other_obj[arr2[3]]['link'] + '">' + area92_other_obj[arr2[3]]['title'] + '</a>');
+            $('#li5').html('‧<a href="' + area92_other_obj[arr2[4]]['link'] + '">' + area92_other_obj[arr2[4]]['title'] + '</a>');
+            //area2
+            $('#iurl2').attr('href', area92_header_obj[arr[1]]['link']);
+            $('#iimg2').attr('src', area92_header_obj[arr[1]]['img'] + '?' + rr);
+            $('#tit2').html('<a href="' + area92_header_obj[arr[1]]['link'] + '">' + area92_header_obj[arr[1]]['title'] + '</a>');
+            $('#li6').html('‧<a href="' + area92_other_obj[arr2[5]]['link'] + '">' + area92_other_obj[arr2[5]]['title'] + '</a>');
+            $('#li7').html('‧<a href="' + area92_other_obj[arr2[6]]['link'] + '">' + area92_other_obj[arr2[6]]['title'] + '</a>');
+            $('#li8').html('‧<a href="' + area92_other_obj[arr2[7]]['link'] + '">' + area92_other_obj[arr2[7]]['title'] + '</a>');
+            $('#li9').html('‧<a href="' + area92_other_obj[arr2[8]]['link'] + '">' + area92_other_obj[arr2[8]]['title'] + '</a>');
+            $('#li10').html('‧<a href="' + area92_other_obj[arr2[9]]['link'] + '">' + area92_other_obj[arr2[9]]['title'] + '</a>');
+
+        });
+    </script>
+    <section class="lgblk_acle"><p class="xb_tit">文章關注</p>
+        <article class="arbk bbm">
+            <a id="iurl1" href=""><img id="iimg1" src="" border="0"></a>
+            <ul>
+                <li class="tit" id="tit1"></li>
+                <li id="li1"></li>
+                <li id="li2"></li>
+                <li id="li3"></li>
+                <li id="li4"></li>
+                <li id="li5"></li>
+            </ul>
+        </article>
+        <article class="arbk">
+            <a id="iurl2" href=""><img id="iimg2" src="" border="0"></a>
+            <ul>
+                <li class="tit" id="tit2"></li>
+                <li id="li6"></li>
+                <li id="li7"></li>
+                <li id="li8"></li>
+                <li id="li9"></li>
+                <li id="li10"></li>
+            </ul>
+        </article>
+    </section>
+    <!-- 區塊9-2 文章關注 end -->
+
+    <!-- 區塊9-3 今日焦點 start -->
+
+    <section class="blk_focus">
+        <h2><a href="counter.php?sid=5837246">因應情勢 陸擬擴大青年交流</a></h2>
+        <ul class="fnewc">
+            <li>【社會】</li>
+            <li><a href="counter.php?sid=5837247">貨機降落桃機跑道 機翼起火搶救</a></li>
+            <li><a href="counter.php?sid=5837248">桃機大停電 旅客摸黑批誇張</a></li>
+        </ul>
+        <ul class="fnewc">
+            <li>【生活】</li>
+            <li><a href="counter.php?sid=5837249">花60秒！蘇打餅乾變身 法式精緻料理</a></li>
+            <li><a href="counter.php?sid=5837250">「照明設備」斷電 桃機二航停電20分</a></li>
+        </ul>
+        <ul class="fnewc">
+            <li>【娛樂】</li>
+            <li><a href="counter.php?sid=5837251">頂坡角上的家 重現樂生故事</a></li>
+            <li><a href="counter.php?sid=5837252">禿不禿髮? 常見的原因與頭髮保健</a></li>
+        </ul>
+        <ul class="fnewc">
+            <li>【政治】</li>
+            <li><a href="counter.php?sid=5837253">瑞典總理：準備支持榮科擔任主席</a></li>
+            <li><a href="counter.php?sid=5837254">為畢業生致詞 總統：別一直想延畢</a></li>
+        </ul>
+    </section>
+    <!-- 區塊9-3 今日焦點 end -->
+
+    <!-- 區塊9-4 熱門照片 start -->
+
+    <script type="text/javascript">
+        $(function () {
+            var area94_left_obj = {"1": {"title": "2011\u53f0\u5317\u725b\u8089\u9eb5\u7bc0", "img": "http:\/\/w6.pchome.com.tw\/img\/76\/l_0.jpg", "link": "counter.php?sid=5837262"}, "2": {"title": "\u725b\u8089\u9eb5", "img": "http:\/\/w6.pchome.com.tw\/img\/76\/l_1.jpg", "link": "counter.php?sid=5837263"}, "3": {"title": "2011.06.11-\u6797\u6771\u82b3\u725b\u8089\u9eb5", "img": "http:\/\/w6.pchome.com.tw\/img\/76\/l_2.jpg", "link": "counter.php?sid=5837264"}, "4": {"title": "\u6c38\u5eb7\u725b\u8089\u9eb5", "img": "http:\/\/w6.pchome.com.tw\/img\/76\/l_3.jpg", "link": "counter.php?sid=5837265"}, "5": {"title": "20110709-\u5efa\u5b8f\u725b\u8089\u9eb5", "img": "http:\/\/w6.pchome.com.tw\/img\/76\/l_4.jpg", "link": "counter.php?sid=5837266"}, "6": {"title": "\u725b\u8089\u9eb5", "img": "http:\/\/w6.pchome.com.tw\/img\/76\/l_5.jpg", "link": "counter.php?sid=5837267"}, "7": {"title": "2010\u53f0\u5317\u570b\u969b\u725b\u8089\u9eb5\u7bc012.05", "img": "http:\/\/w6.pchome.com.tw\/img\/76\/l_6.jpg", "link": "counter.php?sid=5837268"}, "8": {"title": "1010211-\u6797\u6771\u82b3\u725b\u8089\u9eb5", "img": "http:\/\/w6.pchome.com.tw\/img\/76\/l_7.jpg", "link": "counter.php?sid=5837269"}, "9": {"title": "100807", "img": "http:\/\/w6.pchome.com.tw\/img\/76\/l_8.jpg", "link": "counter.php?sid=5837270"}, "10": {"title": "2013.06.30\u5317\u6295\u91d1\u6625\u767c\u725b\u8089\u9eb5", "img": "http:\/\/w6.pchome.com.tw\/img\/76\/l_9.jpg", "link": "counter.php?sid=5837271"}, "11": {"title": "\u9e7f\u91ce\u9ad8\u53f0", "img": "http:\/\/w6.pchome.com.tw\/img\/76\/l_10.jpg", "link": "counter.php?sid=5837272"}, "12": {"title": "\u82b1\u6771\u4e4b\u884c (\u9e7f\u91ce\u9ad8\u53f0-\u71b1\u6c7d\u7403\u5609\u5e74\u83ef)", "img": "http:\/\/w6.pchome.com.tw\/img\/76\/l_11.jpg", "link": "counter.php?sid=5837273"}, "13": {"title": "2012\u65b0\u6625\u884c_\u53f0\u6771", "img": "http:\/\/w6.pchome.com.tw\/img\/76\/l_12.jpg", "link": "counter.php?sid=5837274"}, "14": {"title": "20120307\u53f0\u6771\u9e7f\u91ce\u9ad8\u53f0", "img": "http:\/\/w6.pchome.com.tw\/img\/76\/l_13.jpg", "link": "counter.php?sid=5837275"}, "15": {"title": "1000227", "img": "http:\/\/w6.pchome.com.tw\/img\/76\/l_14.jpg", "link": "counter.php?sid=5837276"}, "16": {"title": "\u6211\u5728\u82b1\u6771\u6d41\u6d6a--000228--DAY2-\u4e8c\u8a2a\u611b\u5b0c\u59e8+\u5351\u5357\u6587\u5316\u516c\u5712", "img": "http:\/\/w6.pchome.com.tw\/img\/76\/l_15.jpg", "link": "counter.php?sid=5837277"}, "17": {"title": "\u9e7f\u91ce\u9ad8\u53f0", "img": "http:\/\/w6.pchome.com.tw\/img\/76\/l_16.jpg", "link": "counter.php?sid=5837278"}, "18": {"title": "\u9e7f\u91ce\u9ad8\u53f0", "img": "http:\/\/w6.pchome.com.tw\/img\/76\/l_17.jpg", "link": "counter.php?sid=5837279"}, "19": {"title": "\u82b1\u6771\u884c4~\u5351\u5357\u6587\u5316\u516c\u5712 \u9e7f\u91ce\u9ad8\u53f0", "img": "http:\/\/w6.pchome.com.tw\/img\/76\/l_18.jpg", "link": "counter.php?sid=5837280"}, "20": {"title": "1011220\u53f0\u6771\u9e7f\u91ce\u9ad8\u53f0", "img": "http:\/\/w6.pchome.com.tw\/img\/76\/l_19.jpg", "link": "counter.php?sid=5837281"}, "21": {"title": "2007.08.24\u6f8e\u6e56\u6f58\u5b89\u90a6\u6545\u5c45\uff06\u79c1\u623f\u666f\u9ede", "img": "http:\/\/w6.pchome.com.tw\/img\/76\/l_20.jpg", "link": "counter.php?sid=5837282"}, "22": {"title": "\u6c5f\u5357\u904a \u7d39\u8208\u9b6f\u8fc5\u6545\u5c45", "img": "http:\/\/w6.pchome.com.tw\/img\/76\/l_21.jpg", "link": "counter.php?sid=5837283"}, "23": {"title": "\u4e2d\u5c71\u6545\u5c45\uff06\u5dba\u5357\u6c34\u9109", "img": "http:\/\/w6.pchome.com.tw\/img\/76\/l_22.jpg", "link": "counter.php?sid=5837284"}, "24": {"title": "\u5f35\u5b78\u826f\u6545\u5c45", "img": "http:\/\/w6.pchome.com.tw\/img\/76\/l_23.jpg", "link": "counter.php?sid=5837285"}, "25": {"title": "\u6797\u8a9e\u5802\u6545\u5c45", "img": "http:\/\/w6.pchome.com.tw\/img\/76\/l_24.jpg", "link": "counter.php?sid=5837286"}, "26": {"title": "\u8881\u5d07\u7165\u6545\u5c45", "img": "http:\/\/w6.pchome.com.tw\/img\/76\/l_25.jpg", "link": "counter.php?sid=5837287"}, "27": {"title": "\u4e94\u5cf0\u6e05\u6cc9\u5f35\u5b78\u826f\u6545\u5c45", "img": "http:\/\/w6.pchome.com.tw\/img\/76\/l_26.jpg", "link": "counter.php?sid=5837288"}, "28": {"title": "\u6bb7\u6d77\u5149\u6545\u5c45", "img": "http:\/\/w6.pchome.com.tw\/img\/76\/l_27.jpg", "link": "counter.php?sid=5837289"}, "29": {"title": "2009-2-14\u6731\u7396\u7469\u6545\u5c45\u4e00\u904a", "img": "http:\/\/w6.pchome.com.tw\/img\/76\/l_28.jpg", "link": "counter.php?sid=5837290"}, "30": {"title": "\u6bb7\u6d77\u5149\u6545\u5c45", "img": "http:\/\/w6.pchome.com.tw\/img\/76\/l_29.jpg", "link": "counter.php?sid=5837291"}}
+            var arr = [];
+            $.each(area94_left_obj, function (i, val) {
+                arr.push(i);
+            });
+            arr = $.shuffle(arr);
+            $('#lphotohot1').html('<a href="' + area94_left_obj[arr[0]]['link'] + '"><em class="htp_cap">' + area94_left_obj[arr[0]]['title'] + '</em><img src="' + area94_left_obj[arr[0]]['img'] + '?140625223013"></a>');
+            $('#lphotohot2').html('<a href="' + area94_left_obj[arr[1]]['link'] + '"><em class="mlpic"><img src="' + area94_left_obj[arr[1]]['img'] + '?140625223013"></em><p class="capt">' + area94_left_obj[arr[1]]['title'] + '</p></a>');
+            $('#lphotohot3').html('<a href="' + area94_left_obj[arr[2]]['link'] + '"><em class="mlpic"><img src="' + area94_left_obj[arr[2]]['img'] + '?140625223013"></em><p class="capt">' + area94_left_obj[arr[2]]['title'] + '</p></a>');
+
+            var area94_right_obj = {"1": {"title": "\u5341\u4e03\u516c\u91cc\u6d77\u5cb8\u5916\u62cd", "img": "http:\/\/w6.pchome.com.tw\/img\/76\/r_0.jpg", "link": "counter.php?sid=5837292"}, "2": {"title": "20090328\u9ebb\u9b5a\u5916\u62cd", "img": "http:\/\/w6.pchome.com.tw\/img\/76\/r_1.jpg", "link": "counter.php?sid=5837293"}, "3": {"title": "20121103SOBI\u6c38\u6e05\u570b\u5c0f\u5916\u62cd", "img": "http:\/\/w6.pchome.com.tw\/img\/76\/r_2.jpg", "link": "counter.php?sid=5837294"}, "4": {"title": "20121028TuTu\u897f\u5b50\u7063\u5916\u62cd", "img": "http:\/\/w6.pchome.com.tw\/img\/76\/r_3.jpg", "link": "counter.php?sid=5837295"}, "5": {"title": "\u6e05\u6c34\u570b\u5c0f\u5916\u62cd", "img": "http:\/\/w6.pchome.com.tw\/img\/76\/r_4.jpg", "link": "counter.php?sid=5837296"}, "6": {"title": "Mia @ \u53f0\u5317\u5967\u842c\u5927", "img": "http:\/\/w6.pchome.com.tw\/img\/76\/r_5.jpg", "link": "counter.php?sid=5837297"}, "7": {"title": "Barbie @ \u8f14\u4ec1\u5927\u5b78", "img": "http:\/\/w6.pchome.com.tw\/img\/76\/r_6.jpg", "link": "counter.php?sid=5837298"}, "8": {"title": "Mia @ \u53f0\u7063\u5927\u5b78", "img": "http:\/\/w6.pchome.com.tw\/img\/76\/r_7.jpg", "link": "counter.php?sid=5837299"}, "9": {"title": "Niki @ \u83ef\u5c71\u85dd\u6587\u4e2d\u5fc3", "img": "http:\/\/w6.pchome.com.tw\/img\/76\/r_8.jpg", "link": "counter.php?sid=5837300"}, "10": {"title": "Nica @ \u677e\u5c71\u6587\u5275\u5712\u5340 \u8a66\u62cd", "img": "http:\/\/w6.pchome.com.tw\/img\/76\/r_9.jpg", "link": "counter.php?sid=5837301"}, "11": {"title": "2013\u6d5a\u904a\u53f0\u5317\u71c8\u6703\u5152\u7ae5\u6a02\u5712", "img": "http:\/\/w6.pchome.com.tw\/img\/76\/r_10.jpg", "link": "counter.php?sid=5837302"}, "12": {"title": "20101016\u5152\u7ae5\u6a02\u5712", "img": "http:\/\/w6.pchome.com.tw\/img\/76\/r_11.jpg", "link": "counter.php?sid=5837303"}, "13": {"title": "\u5152\u7ae5\u6a02\u5712 WITH \u5bb6\u4eba", "img": "http:\/\/w6.pchome.com.tw\/img\/76\/r_12.jpg", "link": "counter.php?sid=5837304"}, "14": {"title": "\u61f7\u5ff5&amp;amp;#12398;\u5152\u7ae5\u6a02\u5712", "img": "http:\/\/w6.pchome.com.tw\/img\/76\/r_13.jpg", "link": "counter.php?sid=5837305"}, "15": {"title": "\u3010\u6700\u5f8c\u7684\u5152\u7ae5\u6a02\u5712\u3011Apr.2009", "img": "http:\/\/w6.pchome.com.tw\/img\/76\/r_14.jpg", "link": "counter.php?sid=5837306"}, "16": {"title": "1001120\u5152\u7ae5\u6a02\u5712", "img": "http:\/\/w6.pchome.com.tw\/img\/76\/r_15.jpg", "link": "counter.php?sid=5837307"}, "17": {"title": "20101127\u5152\u7ae5\u6a02\u5712", "img": "http:\/\/w6.pchome.com.tw\/img\/76\/r_16.jpg", "link": "counter.php?sid=5837308"}, "18": {"title": "20130331-\u5152\u7ae5\u6a02\u5712", "img": "http:\/\/w6.pchome.com.tw\/img\/76\/r_17.jpg", "link": "counter.php?sid=5837309"}, "19": {"title": "\u5152\u7ae5\u6a02\u5712", "img": "http:\/\/w6.pchome.com.tw\/img\/76\/r_18.jpg", "link": "counter.php?sid=5837310"}, "20": {"title": "2006.10.29 -\u5152\u7ae5\u6a02\u5712", "img": "http:\/\/w6.pchome.com.tw\/img\/76\/r_19.jpg", "link": "counter.php?sid=5837311"}}
+            var arr2 = [];
+            $.each(area94_right_obj, function (i, val) {
+                arr2.push(i);
+            });
+            arr2 = $.shuffle(arr2);
+            $('#rphotohot1').html('<a href="' + area94_right_obj[arr2[0]]['link'] + '"><em class="spic"><img src="' + area94_right_obj[arr2[0]]['img'] + '?140625223013" height="125"></em><p class="capt">' + area94_right_obj[arr2[0]]['title'] + '</p></a>');
+            $('#rphotohot2').html('<a href="' + area94_right_obj[arr2[1]]['link'] + '"><em class="spic"><img src="' + area94_right_obj[arr2[1]]['img'] + '?140625223013" height="125"></em><p class="capt">' + area94_right_obj[arr2[1]]['title'] + '</p></a>');
+            $('#rphotohot3').html('<a href="' + area94_right_obj[arr2[2]]['link'] + '"><em class="spic"><img src="' + area94_right_obj[arr2[2]]['img'] + '?140625223013" height="125"></em><p class="capt">' + area94_right_obj[arr2[2]]['title'] + '</p></a>');
+            $('#rphotohot4').html('<a href="' + area94_right_obj[arr2[3]]['link'] + '"><em class="spic"><img src="' + area94_right_obj[arr2[3]]['img'] + '?140625223013" height="125"></em><p class="capt">' + area94_right_obj[arr2[3]]['title'] + '</p></a>');
+
+        });
+    </script>
+    <section class="blk_hotpic">
+        <p class="xb_tit">熱門照片</p>
+        <article class="htpclt">
+            <div class="mpic" id="lphotohot1"></div>
+            <div class="ml" id="lphotohot2"></div>
+            <div class="ml lf" id="lphotohot3"></div>
+        </article>
+        <article class="htpcrt">
+            <div class="ssp" id="rphotohot1"></div>
+            <div class="ssp" id="rphotohot2"></div>
+            <div class="ssp" id="rphotohot3"></div>
+            <div class="ssp" id="rphotohot4"></div>
+        </article>
+    </section>
+    <!-- 區塊9-4 熱門照片 end -->
+</div>
+<!-- 區塊9 左半邊 End -->
+
+<!-- 區塊9 右半邊 Start -->
+<div class="sidebar_rgtbotm">
+
+    <!-- 區塊9-5 精選專題 start -->
+    <p class="xb_tit">精選專題</p>
+
+    <script type="text/javascript">
+        $(function () {
+            var area95_obj = [
+                {"title": "\u6731\u7acb\u502b\u7d42\u65bc\u8868\u614b\u53c3\u9078\u65b0\u5317\u5e02\u9577\uff0c\u4f60\u652f\u6301\u55ce?", "pic": "http:\/\/w6.pchome.com.tw\/img\/77\/1.jpg", "desc": "\u81c9\u66f8\u558a\u9023\u4efb\uff01 \u6731\u7acb\u502b\uff1a\u518d\u7576\u300c4\u300d\u5e74", "link": "counter.php?sid=5837255"},
+                {"title": "\u672c\u5c46\u91d1\u66f2\u734e\u5165\u570d\u540d\u55ae\u661f\u5149\u9eef\u6de1\uff0c\u4f60\u9084\u6703\u770b\u8f49\u64ad\u55ce?", "pic": "http:\/\/w6.pchome.com.tw\/img\/77\/2.jpg", "desc": "7\u6b4c\u738b\u540e\u6490\u661f\u5149 10\u6bb5\u79c0\u7838\u8fd1\u5343\u842c\u91cd\u91d1", "link": "counter.php?sid=5837256"},
+                {"title": "\u9ec3\u666f\u6cf0\u6d89\u95dc\u8aaa\uff0c\u4ed6\u8a72\u4ee5200\u842c\u4ea4\u4fdd\u55ce?", "pic": "http:\/\/w6.pchome.com.tw\/img\/77\/3.jpg", "desc": "\u6d89\u5acc\u95dc\u8aaa\uff01 \u9ec3\u666f\u6cf0\u66f4\u88c1200\u842c\u4ea4\u4fdd", "link": "counter.php?sid=5837257"},
+                {"title": "\u7fe0\u7389\u767d\u83dc\u8d74\u65e5\u7206\u767c\u6587\u5ba3\u98a8\u6ce2\uff0c\u53ef\u80fd\u6703\u64a4\u5c55\uff0c\u4f60\u600e\u9ebc\u770b?", "pic": "http:\/\/w6.pchome.com.tw\/img\/77\/4.jpg", "desc": "\u7fe0\u7389\u767d\u83dc\u62b5\u65e5\u4eca\u958b\u7bb1 \u6545\u5bae\u300c\u570b\u7acb\u300d\u795e\u96b1", "link": "counter.php?sid=5837258"},
+                {"title": "\u54ea\u90e8\u6691\u5047\u5f37\u6a94\u4f60\u6700\u60f3\u770b?", "pic": "http:\/\/w6.pchome.com.tw\/img\/77\/5.jpg", "desc": "\u300c\u8b8a\u5f62\u91d1\u525b4\u300d\u9999\u6e2f\u9996\u6620 \u773e\u661f\u96f2\u96c6", "link": "counter.php?sid=5837259"},
+                {"title": "\u6797\u84bc\u751f:\u6709\u7406\u5ff5\u534ak\u4e5f\u80fd\u6d3b\uff0c\u53ea\u6709\u534aK\u53ef\u4ee5\u6d3b\u55ce?", "pic": "http:\/\/w6.pchome.com.tw\/img\/77\/6.jpg", "desc": "\u300c\u6709\u7406\u5ff5\u534ak\u4e5f\u80fd\u6d3b\uff01\u300d \u6797\u84bc\u751f\u767c\u8a00\u88ab\u7f75\u7ffb", "link": "counter.php?sid=5837260"},
+                {"title": "\u590f\u5929\u5230\u4e86\uff0c\u4f60\u559c\u6b61\u54ea\u7a2e\u6d88\u6691\u65b9\u6cd5?", "pic": "http:\/\/w6.pchome.com.tw\/img\/77\/7.jpg", "desc": "\u71b1\u7ffb\uff01\u300c\u8292\u679c\u300d\u971c\u6dc7\u6dcb\u6436\u8ce3 \u8cfa\u6d88\u6691\u8ca1", "link": "counter.php?sid=5837261"}
+            ]
+            var arr = [0, 1, 2, 3, 4, 5, 6];
+            arr = $.shuffle(arr);
+            $('#sec1').html('<div class="dtlbox"><h5><a href="' + area95_obj[arr[0]]['link'] + '">' + area95_obj[arr[0]]['title'] + '</a></h5><article>' + area95_obj[arr[0]]['desc'] + '<a href="' + area95_obj[arr[0]]['link'] + '">[詳細]</a></article></div><a href="' + area95_obj[arr[0]]['link'] + '"><img src="' + area95_obj[arr[0]]['pic'] + '?140625223005"></a>');
+            $('#sec2').html('<div class="dtlbox"><h5><a href="' + area95_obj[arr[1]]['link'] + '">' + area95_obj[arr[1]]['title'] + '</a></h5><article>' + area95_obj[arr[1]]['desc'] + '<a href="' + area95_obj[arr[1]]['link'] + '">[詳細]</a></article></div><a href="' + area95_obj[arr[1]]['link'] + '"><img src="' + area95_obj[arr[1]]['pic'] + '?140625223005"></a>');
+            $('#sec3').html('<div class="dtlbox"><h5><a href="' + area95_obj[arr[2]]['link'] + '">' + area95_obj[arr[2]]['title'] + '</a></h5><article>' + area95_obj[arr[2]]['desc'] + '<a href="' + area95_obj[arr[2]]['link'] + '">[詳細]</a></article></div><a href="' + area95_obj[arr[2]]['link'] + '"><img src="' + area95_obj[arr[2]]['pic'] + '?140625223005"></a>');
+        });
+    </script>
+    <section class="xlst" id="sec1"></section>
+
+    <section class="xlst" id="sec2"></section>
+
+    <section class="xlst" id="sec3"></section>
+
+    <script type="text/javascript">
+        $(function () {
+            var area96_obj = [
+                {"titword": "\u624b\u6a5f\u756b\u9762\u76f4\u64ad", "nickname": "mikey", "pic": "http:\/\/w6.pchome.com.tw\/img\/78\/0.jpg", "photonum": "109", "fansnum": "40", "friendnum": "10", "url": "counter.php?sid=5831409"},
+                {"titword": "\u73fe\u5834\u756b\u9762\u76f4\u64ca", "nickname": "jerry4634", "pic": "http:\/\/w6.pchome.com.tw\/img\/78\/1.jpg", "photonum": "255", "fansnum": "211", "friendnum": "91", "url": "counter.php?sid=5831410"},
+                {"titword": "\u73fe\u5834\u756b\u9762\u76f4\u64ca", "nickname": "\u90a3\u5361\u897f\u9054", "pic": "http:\/\/w6.pchome.com.tw\/img\/78\/2.jpg", "photonum": "253", "fansnum": "349", "friendnum": "23", "url": "counter.php?sid=5831411"},
+                {"titword": "\u73fe\u5834\u756b\u9762\u76f4\u64ca", "nickname": "freewifi", "pic": "http:\/\/w6.pchome.com.tw\/img\/78\/3.jpg", "photonum": "71", "fansnum": "48", "friendnum": "13", "url": "counter.php?sid=5831412"},
+                {"titword": "\u751f\u6d3b\u982d\u7248\u9054\u4eba", "nickname": "ivy", "pic": "http:\/\/w6.pchome.com.tw\/img\/78\/4.jpg", "photonum": "58", "fansnum": "18", "friendnum": "18", "url": "counter.php?sid=5831413"},
+                {"titword": "\u96a8\u62cd\u516c\u6c11\u8a18\u8005", "nickname": "\u597d\u651d\u5ba2 \u714c", "pic": "http:\/\/w6.pchome.com.tw\/img\/78\/5.jpg", "photonum": "3364", "fansnum": "729", "friendnum": "733", "url": "counter.php?sid=5831414"},
+                {"titword": "\u73fe\u5834\u756b\u9762\u76f4\u64ca", "nickname": "\u5c0f\u524d", "pic": "http:\/\/w6.pchome.com.tw\/img\/78\/6.jpg", "photonum": "23", "fansnum": "80", "friendnum": "4", "url": "counter.php?sid=5831415"},
+                {"titword": "\u73fe\u5834\u756b\u9762\u76f4\u64ca", "nickname": "A\u4ed4", "pic": "http:\/\/w6.pchome.com.tw\/img\/78\/7.jpg", "photonum": "464", "fansnum": "307", "friendnum": "0", "url": "counter.php?sid=5831416"},
+                {"titword": "\u73fe\u5834\u756b\u9762\u76f4\u64ca", "nickname": "Sam Hsu", "pic": "http:\/\/w6.pchome.com.tw\/img\/78\/8.jpg", "photonum": "249", "fansnum": "316", "friendnum": "110", "url": "counter.php?sid=5831417"},
+                {"titword": "\u71b1\u5fc3\u7db2\u53cb\u63d0\u4f9b", "nickname": "\u82b1\u5148\u751f", "pic": "http:\/\/w6.pchome.com.tw\/img\/78\/9.jpg", "photonum": "586", "fansnum": "170", "friendnum": "52", "url": "counter.php?sid=5831418"},
+                {"titword": "\u4eca\u65e5\u96a8\u62cd\u7126\u9ede", "nickname": "Claire", "pic": "http:\/\/w6.pchome.com.tw\/img\/78\/10.jpg", "photonum": "551", "fansnum": "365", "friendnum": "79", "url": "counter.php?sid=5831419"},
+                {"titword": "\u4eca\u65e5\u96a8\u62cd\u7126\u9ede", "nickname": "A-fon", "pic": "http:\/\/w6.pchome.com.tw\/img\/78\/11.jpg", "photonum": "223", "fansnum": "308", "friendnum": "63", "url": "counter.php?sid=5831420"},
+                {"titword": "\u71b1\u5fc3\u7db2\u53cb\u63d0\u4f9b", "nickname": "opheliayun", "pic": "http:\/\/w6.pchome.com.tw\/img\/78\/12.jpg", "photonum": "592", "fansnum": "398", "friendnum": "126", "url": "counter.php?sid=5831421"},
+                {"titword": "\u624b\u6a5f\u756b\u9762\u76f4\u64ad", "nickname": "\u8309\u8389", "pic": "http:\/\/w6.pchome.com.tw\/img\/78\/13.jpg", "photonum": "60", "fansnum": "78", "friendnum": "10", "url": "counter.php?sid=5831422"},
+                {"titword": "\u73fe\u5834\u756b\u9762\u76f4\u64ca", "nickname": "\u8299", "pic": "http:\/\/w6.pchome.com.tw\/img\/78\/14.jpg", "photonum": "312", "fansnum": "229", "friendnum": "24", "url": "counter.php?sid=5831423"},
+                {"titword": "\u624b\u6a5f\u756b\u9762\u76f4\u64ad", "nickname": "Baalaark \u5149", "pic": "http:\/\/w6.pchome.com.tw\/img\/78\/15.jpg", "photonum": "328", "fansnum": "405", "friendnum": "143", "url": "counter.php?sid=5831424"},
+                {"titword": "\u5c08\u696d\u96a8\u62cd\u9054\u4eba", "nickname": "\u55ac\u5df4\u5df4", "pic": "http:\/\/w6.pchome.com.tw\/img\/78\/16.jpg", "photonum": "56", "fansnum": "32", "friendnum": "85", "url": "counter.php?sid=5831425"},
+                {"titword": "\u5c0f\u7de8\u7dda\u4e0a\u63a8\u85a6", "nickname": "\u6211\u662f\u99ac\u514b", "pic": "http:\/\/w6.pchome.com.tw\/img\/78\/17.jpg", "photonum": "198", "fansnum": "376", "friendnum": "36", "url": "counter.php?sid=5831426"},
+                {"titword": "\u96a8\u62cd\u516c\u6c11\u8a18\u8005", "nickname": "\u8394\u5929\u4f7f:\u6211\u982d\u4e0a\u9577\u8349", "pic": "http:\/\/w6.pchome.com.tw\/img\/78\/18.jpg", "photonum": "1289", "fansnum": "796", "friendnum": "2016", "url": "counter.php?sid=5831427"},
+                {"titword": "\u73fe\u5834\u756b\u9762\u76f4\u64ca", "nickname": "bluewow", "pic": "http:\/\/w6.pchome.com.tw\/img\/78\/19.jpg", "photonum": "985", "fansnum": "273", "friendnum": "105", "url": "counter.php?sid=5831428"},
+                {"titword": "\u4eca\u65e5\u96a8\u62cd\u7126\u9ede", "nickname": "yuemei168", "pic": "http:\/\/w6.pchome.com.tw\/img\/78\/20.jpg", "photonum": "2612", "fansnum": "212", "friendnum": "0", "url": "counter.php?sid=5831429"},
+                {"titword": "\u5c08\u696d\u96a8\u62cd\u9054\u4eba", "nickname": "jessica_522", "pic": "http:\/\/w6.pchome.com.tw\/img\/78\/21.jpg", "photonum": "59", "fansnum": "34", "friendnum": "13", "url": "counter.php?sid=5831430"},
+                {"titword": "\u4eca\u65e5\u96a8\u62cd\u7126\u9ede", "nickname": "\u5c0f\u6e1d\u5152", "pic": "http:\/\/w6.pchome.com.tw\/img\/78\/22.jpg", "photonum": "84", "fansnum": "80", "friendnum": "2", "url": "counter.php?sid=5831431"},
+                {"titword": "\u751f\u6d3b\u982d\u7248\u9054\u4eba", "nickname": "\u8cf4\u5b50", "pic": "http:\/\/w6.pchome.com.tw\/img\/78\/23.jpg", "photonum": "244", "fansnum": "243", "friendnum": "26", "url": "counter.php?sid=5831432"},
+                {"titword": "\u4eca\u65e5\u96a8\u62cd\u7126\u9ede", "nickname": "margaret", "pic": "http:\/\/w6.pchome.com.tw\/img\/78\/24.jpg", "photonum": "394", "fansnum": "114", "friendnum": "154", "url": "counter.php?sid=5831433"},
+                {"titword": "\u5c0f\u7de8\u7dda\u4e0a\u63a8\u85a6", "nickname": "hn88755332", "pic": "http:\/\/w6.pchome.com.tw\/img\/78\/25.jpg", "photonum": "231", "fansnum": "15", "friendnum": "0", "url": "counter.php?sid=5831434"},
+                {"titword": "\u5c0f\u7de8\u7dda\u4e0a\u63a8\u85a6", "nickname": "\u6a58*", "pic": "http:\/\/w6.pchome.com.tw\/img\/78\/26.jpg", "photonum": "138", "fansnum": "61", "friendnum": "4", "url": "counter.php?sid=5831435"},
+                {"titword": "\u5c0f\u7de8\u7dda\u4e0a\u63a8\u85a6", "nickname": "\u5854\u5854\u5c0f\u59d0", "pic": "http:\/\/w6.pchome.com.tw\/img\/78\/27.jpg", "photonum": "76", "fansnum": "129", "friendnum": "19", "url": "counter.php?sid=5831436"},
+                {"titword": "\u751f\u6d3b\u982d\u7248\u9054\u4eba", "nickname": "kaoleelan", "pic": "http:\/\/w6.pchome.com.tw\/img\/78\/28.jpg", "photonum": "1038", "fansnum": "286", "friendnum": "73", "url": "counter.php?sid=5831437"},
+                {"titword": "\u73fe\u5834\u756b\u9762\u76f4\u64ca", "nickname": "hero", "pic": "http:\/\/w6.pchome.com.tw\/img\/78\/29.jpg", "photonum": "12", "fansnum": "27", "friendnum": "0", "url": "counter.php?sid=5831438"},
+                {"titword": "\u71b1\u5fc3\u7db2\u53cb\u63d0\u4f9b", "nickname": "sunny sunny \u3002", "pic": "http:\/\/w6.pchome.com.tw\/img\/78\/30.jpg", "photonum": "412", "fansnum": "525", "friendnum": "58", "url": "counter.php?sid=5831439"},
+                {"titword": "\u96a8\u62cd\u516c\u6c11\u8a18\u8005", "nickname": "\u8349\u87ec", "pic": "http:\/\/w6.pchome.com.tw\/img\/78\/31.jpg", "photonum": "551", "fansnum": "55", "friendnum": "238", "url": "counter.php?sid=5831440"},
+                {"titword": "\u624b\u6a5f\u756b\u9762\u76f4\u64ad", "nickname": "\u56db\u5c3e", "pic": "http:\/\/w6.pchome.com.tw\/img\/78\/32.jpg", "photonum": "70", "fansnum": "127", "friendnum": "15", "url": "counter.php?sid=5831441"},
+                {"titword": "\u5c08\u696d\u96a8\u62cd\u9054\u4eba", "nickname": "\u694a\u5ff5\u5875", "pic": "http:\/\/w6.pchome.com.tw\/img\/78\/33.jpg", "photonum": "1506", "fansnum": "281", "friendnum": "212", "url": "counter.php?sid=5831442"},
+                {"titword": "\u4eca\u65e5\u96a8\u62cd\u7126\u9ede", "nickname": "\u5c0f\u6cbb", "pic": "http:\/\/w6.pchome.com.tw\/img\/78\/34.jpg", "photonum": "149", "fansnum": "60", "friendnum": "0", "url": "counter.php?sid=5831443"},
+                {"titword": "\u96a8\u62cd\u516c\u6c11\u8a18\u8005", "nickname": "\u9719\u9719", "pic": "http:\/\/w6.pchome.com.tw\/img\/78\/35.jpg", "photonum": "252", "fansnum": "281", "friendnum": "127", "url": "counter.php?sid=5831444"},
+                {"titword": "\u5c08\u696d\u96a8\u62cd\u9054\u4eba", "nickname": "myworkdone", "pic": "http:\/\/w6.pchome.com.tw\/img\/78\/36.jpg", "photonum": "21", "fansnum": "31", "friendnum": "28", "url": "counter.php?sid=5831445"},
+                {"titword": "\u96a8\u62cd\u516c\u6c11\u8a18\u8005", "nickname": "\u5431\u5431\u55b3\u55b3", "pic": "http:\/\/w6.pchome.com.tw\/img\/78\/37.jpg", "photonum": "529", "fansnum": "354", "friendnum": "30", "url": "counter.php?sid=5831446"},
+                {"titword": "\u4eca\u65e5\u96a8\u62cd\u7126\u9ede", "nickname": "\u5e03\u9b6f\u65af\u5148\u751f", "pic": "http:\/\/w6.pchome.com.tw\/img\/78\/38.jpg", "photonum": "2566", "fansnum": "890", "friendnum": "1734", "url": "counter.php?sid=5831447"},
+                {"titword": "\u5c0f\u7de8\u7dda\u4e0a\u63a8\u85a6", "nickname": "\u5854\u8332 ( \u00b4 \u25bd `", "pic": "http:\/\/w6.pchome.com.tw\/img\/78\/39.jpg", "photonum": "1636", "fansnum": "1069", "friendnum": "314", "url": "counter.php?sid=5831448"}
+            ]
+            var arr = [];
+            $.each(area96_obj, function (i, val) {
+                arr.push(i);
+            });
+            arr = $.shuffle(arr);
+
+            $('#area961').html('<div class="dtlbox"><h5><a href="' + area96_obj[arr[0]]['url'] + '">' + area96_obj[arr[0]]['titword'] + '》' + area96_obj[arr[0]]['nickname'] + '</a></h5><article>粉絲數：' + area96_obj[arr[0]]['fansnum'] + '│ 追蹤數：' + area96_obj[arr[0]]['friendnum'] + '<p>Kaza數：' + area96_obj[arr[0]]['photonum'] + '<a href="' + area96_obj[arr[0]]['url'] + '"> [追蹤我]</a></p></article></div><a href="' + area96_obj[arr[0]]['url'] + '"><img src="' + area96_obj[arr[0]]['pic'] + '?140625053011"></a>');
+            $('#area962').html('<div class="dtlbox"><h5><a href="' + area96_obj[arr[1]]['url'] + '">' + area96_obj[arr[1]]['titword'] + '》' + area96_obj[arr[1]]['nickname'] + '</a></h5><article>粉絲數：' + area96_obj[arr[1]]['fansnum'] + '│ 追蹤數：' + area96_obj[arr[1]]['friendnum'] + '<p>Kaza數：' + area96_obj[arr[1]]['photonum'] + '<a href="' + area96_obj[arr[1]]['url'] + '"> [追蹤我]</a></p></article></div><a href="' + area96_obj[arr[1]]['url'] + '"><img src="' + area96_obj[arr[1]]['pic'] + '?140625053011"></a>');
+
+        });
+    </script>
+    <section class="xlst" id="area961"></section>
+
+    <section class="xlst" id="area962"></section>
+    <!-- 區塊9-5 精選專題 end -->
+
+    <!-- 區塊9-6 趨勢討論 start -->
+
+    <script type="text/javascript">
+        $(function () {
+            var area97_obj = [
+                {"title": "\u5f35\u5fd7\u8ecd\u4f86\u53f0 \u7dad\u5b89\u8b66\u529b\u5c31\u7dd2", "cat": "\u653f\u6cbb", "desc": "\u5927\u9678\u570b\u53f0\u8fa6\u4e3b\u4efb\u5f35\u5fd7\u8ecd6\u670825\u65e5\u62b5\u53f0\uff0c\u6843\u5712\u6a5f\u5834\u51fa\u73fe\u6bd4\u5e73\u5e38\u591a\u51fa\u5e7e\u500d\u7684\u8b66\u529b\u52a0\u5f37\u7dad\u5b89\uff0c\u4ee5\u9632\u6b62\u6297\u8b70\u4e8b\u4ef6\u9020\u6210\u885d\u7a81\u3002\u5f35\u5fd7\u8ecd\u62b5\u53f0\u5f8c\uff0c\u8207\u884c\u653f\u9662\u5927\u9678\u59d4\u54e1\u6703\u4e3b\u59d4\u738b\u90c1\u7426\u8209\u884c\u7b2c\u4e8c\u6b21\u5169\u5cb8\u4e8b\u52d9\u9996\u9577\u6703\u8b70\uff08\u738b\u5f35\u4e8c\u6703\uff09\u3002", "link": "counter.php?sid=5837239"},
+                {"title": "\u6731\u7acb\u502b \u5ba3\u5e03\u53c3\u9078\u722d\u9023\u4efb", "cat": "\u653f\u6cbb", "desc": "\u65b0\u5317\u5e02\u9577\u6731\u7acb\u502b6\u670824\u65e5\u4e0a\u53488\u9ede\u5728\u81c9\u66f8\u4e0a\u5ba3\u5e03\uff0c\u5c07\u8981\u722d\u53d6\u65b0\u5317\u5e02\u9577\u9023\u4efb\u3002", "link": "counter.php?sid=5837240"},
+                {"title": "\u4e0d\u6eff12\u5e74\u570b\u6559\u5bb6\u9577\u4e0a\u8857\u6297\u8b70", "cat": "\u751f\u6d3b", "desc": "\u5341\u4e8c\u5e74\u570b\u6559\u6703\u8003\u653e\u699c\uff0c\u5fd7\u9858\u5e8f\u6263\u5206\u5236\u5ea6\uff0c\u9020\u6210\u4e0d\u5c11\u8003\u751f\u9ad8\u5206\u4f4e\u5c31\uff0c\u751a\u81f3\u6c92\u5b78\u6821\u53ef\u5538\u7684\u60c5\u6cc1\uff0c\u5168\u570b\u8003\u751f\u5bb6\u9577\u4e32\u9023\u8d70\u4e0a\u8857\u982d\uff0c\u8a8d\u70ba\u6559\u80b2\u90e8\u81ea\u6211\u611f\u89ba\u826f\u597d\uff0c\u4e0d\u77e5\u9053\u6703\u8003\u8003\u751f\u88ab\u7576\u6210\u767d\u8001\u9f20\u7684\u82e6\uff0c\u55c6\u90e8\u9577\u4e0b\u53f0\u8ca0\u8cac\u3002", "link": "counter.php?sid=5837241"},
+                {"title": "\u9ec3\u666f\u6cf0\u518d\u4ea4\u4fdd \u6aa2\u4e0d\u518d\u6297\u544a", "cat": "\u793e\u6703", "desc": "\u57fa\u9686\u5e02\u8b70\u9577\u9ec3\u666f\u6cf0\u6d89\u5acc\u6536\u8cc4\uff0c\u4e09\u6293\u4e09\u653e\uff0c\u4e09\u5ea6\u7372\u5f97\u4ea4\u4fdd\uff0c\u4ea4\u4fdd\u91d1\u984d\u7dad\u6301200\u842c\uff0c\u6cd5\u5b98\u53e6\u5916\u53c8\u52a0\u4e00\u689d\u9650\u5236\u4f4f\u5c45\uff0c\u6aa2\u65b9\u4e5f\u8868\u793a\u653e\u68c4\u6297\u544a\u3002", "link": "counter.php?sid=5837242"},
+                {"title": "\u7fe0\u7389\u767d\u83dc\u8d74\u65e5 \u5982\u671f\u958b\u5c55", "cat": "\u751f\u6d3b", "desc": "\u6545\u5bae\u8d74\u65e5\u5c55\u56e0\u90e8\u5206\u65e5\u672c\u7576\u5730\u6587\u5ba3\u672a\u4f9d\u96d9\u65b9\u5408\u7d04\uff0c\u5728\u6545\u5bae\u535a\u7269\u9662\u524d\u6a19\u8a3b\u300c\u570b\u7acb\u300d\u5169\u5b57\uff0c\u5f15\u767c\u98a8\u6ce2\u3002\u6545\u5bae6\u670823\u65e5\u4e0a\u5348\u5ba3\u5e03\uff0c\u65e5\u65b9\u5df2\u5b8c\u6210\u6771\u4eacJR\u7dda\u5927\u578b\u6d77\u5831\u66f4\u65b0\uff0c\u570b\u5bf6\u8d74\u65e5\u5c55\u5982\u671f\u8209\u884c\u3002", "link": "counter.php?sid=5837243"},
+                {"title": "\u99ac\u523a\u52c7\u596aNBA\u7e3d\u51a0\u8ecd", "cat": "\u9ad4\u80b2", "desc": "NBA\u7e3d\u51a0\u8ecd\u8cfd\u7b2c5\u6230\uff0c3\u52dd1\u6557\u807d\u724c\u7684\u99ac\u523a\u968a\uff0c6\u670816\u65e5\u56de\u5230\u4e3b\u5834\u62da\u5c01\u738b\uff0c\u71b1\u706b\u968a\u8868\u73fe\u4f9d\u7136\u4e0d\u632f\uff0c\u7d42\u5834\uff0c\u99ac\u523a104:87\u5927\u52dd\u71b1\u706b\uff0c\u62b1\u56de\u7e3d\u51a0\u8ecd\u3002", "link": "counter.php?sid=5837244"},
+                {"title": "\u6cdb\u7da0\u5317\u5e02\u6574\u5408 \u67ef\u6c11\u8abf\u52dd\u51fa", "cat": "\u653f\u6cbb", "desc": "\u6cdb\u7da0\u53f0\u5317\u5e02\u9577\u5728\u91ce\u6574\u5408\uff0c6\u670813\u65e5\u516c\u5e03\u6c11\u8abf\u7d50\u679c\uff0c\u67ef\u6587\u54f2\u8207\u59da\u6587\u667a\u5169\u500b\u4eba\u5c0d\u4e0a\u9023\u52dd\u6587\u90fd\u662f\u52dd\u51fa\u60c5\u6cc1\uff0c\u5176\u4e2d\u67ef\u6587\u54f2\u52dd\u51fa\u7684\u5e45\u5ea6\u6bd4\u8f03\u5927\uff0c\u4f46\u6700\u5f8c\u7684\u7d50\u679c\u9084\u5f97\u7b49\u5230\u4e0b\u5468\u4e2d\u57f7\u6703\u901a\u904e\u624d\u80fd\u7b97\u5b9a\u6848\u3002\r\n", "link": "counter.php?sid=5837245"}
+            ]
+            var arr = [0, 1, 2, 3, 4, 5, 6];
+            arr = $.shuffle(arr);
+            $('#fet1').html('<h4 class="hit"><a href="' + area97_obj[arr[0]]['link'] + '">' + area97_obj[arr[0]]['title'] + '</a></h4><div class="txt">' + area97_obj[arr[0]]['desc'] + '</div><p class="note">[ 專題分類：' + area97_obj[arr[0]]['cat'] + ' ]</p>');
+            $('#fet2').html('<h4 class="hit"><a href="' + area97_obj[arr[1]]['link'] + '">' + area97_obj[arr[1]]['title'] + '</a></h4><div class="txt">' + area97_obj[arr[1]]['desc'] + '</div><p class="note">[ 專題分類：' + area97_obj[arr[1]]['cat'] + ' ]</p>');
+            $('#fet3').html('<h4 class="hit"><a href="' + area97_obj[arr[2]]['link'] + '">' + area97_obj[arr[2]]['title'] + '</a></h4><div class="txt">' + area97_obj[arr[2]]['desc'] + '</div><p class="note">[ 專題分類：' + area97_obj[arr[2]]['cat'] + ' ]</p>');
+        });
+    </script>
+    <p class="xb_tit">趨勢討論</p>
+
+    <section class="tcbox" id="fet1"></section>
+
+    <section class="tcbox" id="fet2"></section>
+
+    <section class="tcbox" id="fet3"></section>
+    <!-- 區塊9-6 趨勢討論 end -->
+</div>
+<!-- 區塊9 右半邊 End -->
+</div>
+<!--下方增長區 End-->
+<div style="margin-top:10px"></div>
+<!--相簿 start-->
+<div id="photo_slides" class="bottom_slides">
+    <b>今日HOT專區<u id="pagename">| 人氣新聞</u></b>
+    <a href="#" class="prev"><img src="img/arrow-prev.gif"></a>
+
+    <div class="slides_container">
+        <div class='inner'>
+            <span><a
+                    href='counter_footref.php?sid=2645978&url=http://news.pchome.com.tw/society/ettv/20140625/index-14036972640708217002.html'
+                    target='_blank'><p><img src='http://w6.pchome.com.tw/img/foothotbar/news/0.jpg?2014062522'></p><i>1坪不到15萬郭董蓋給你！
+                鴻海擬建平價宅</i></a></span>
+            <span><a
+                    href='counter_footref.php?sid=2645978&url=http://news.pchome.com.tw/politics/tvbs/20140625/index-14036961368192539001.html'
+                    target='_blank'><p><img src='http://w6.pchome.com.tw/img/foothotbar/news/1.jpg?2014062522'></p><i>曾審合宜住宅！
+                新北副市長請辭獲准</i></a></span>
+            <span><a
+                    href='counter_footref.php?sid=2645978&url=http://news.pchome.com.tw/society/ettv/20140625/index-14036949484905217002.html'
+                    target='_blank'><p><img src='http://w6.pchome.com.tw/img/foothotbar/news/2.jpg?2014062522'></p><i>車太炫！
+                大牌難掛 特製牌架好麻煩</i></a></span>
+            <span><a
+                    href='counter_footref.php?sid=2645978&url=http://news.pchome.com.tw/entertainment/tvbs/20140625/index-14036947009101739006.html'
+                    target='_blank'><p><img src='http://w6.pchome.com.tw/img/foothotbar/news/3.jpg?2014062522'></p><i>破紀錄！1天2千多場次
+                《變形4》衝票房</i></a></span>
+            <span><a
+                    href='counter_footref.php?sid=2645978&url=http://news.pchome.com.tw/society/ettv/20140625/index-14036962671553617002.html'
+                    target='_blank'><p><img src='http://w6.pchome.com.tw/img/foothotbar/news/4.jpg?2014062522'></p><i>紀錄器太競爭！不只定位還要能測胎壓</i></a></span>
+            <span><a
+                    href='counter_footref.php?sid=2645978&url=http://news.pchome.com.tw/society/ettv/20140625/index-14036953192296117009.html'
+                    target='_blank'><p><img src='http://w6.pchome.com.tw/img/foothotbar/news/5.jpg?2014062522'></p><i>酷！
+                超巨大蛤蠣 比手掌還要大</i></a></span>
+            <span><a
+                    href='counter_footref.php?sid=2645978&url=http://news.pchome.com.tw/healthcare/ibeauty/20140625/index-14036964000032835012.html'
+                    target='_blank'><p><img src='http://w6.pchome.com.tw/img/foothotbar/news/6.jpg?2014062522'></p><i>摸起來簡直像真的乳房！
+                「果凍矽膠」材質的3大特點</i></a></span>
+        </div>
+        <div class='inner'>
+            <span><a href='counter_footref.php?sid=2645979&url=http://photo.pchome.com.tw/fredhh/0262' target='_blank'>
+                <p><img src='http://w6.pchome.com.tw/img/foothotbar/photo/0.jpg?2014062522'></p><i>新社莊園~</i></a></span>
+            <span><a href='counter_footref.php?sid=2645979&url=http://photo.pchome.com.tw/tpleochia/0745'
+                     target='_blank'><p><img src='http://w6.pchome.com.tw/img/foothotbar/photo/1.jpg?2014062522'></p><i>20140413襪</i></a></span>
+            <span><a href='counter_footref.php?sid=2645979&url=http://photo.pchome.com.tw/ener0913/0236'
+                     target='_blank'><p><img src='http://w6.pchome.com.tw/img/foothotbar/photo/2.jpg?2014062522'></p><i>訂婚花絮-手</i></a></span>
+            <span><a href='counter_footref.php?sid=2645979&url=http://photo.pchome.com.tw/photowu/0812' target='_blank'>
+                <p><img src='http://w6.pchome.com.tw/img/foothotbar/photo/3.jpg?2014062522'></p><i>140407
+                杜克</i></a></span>
+            <span><a href='counter_footref.php?sid=2645979&url=http://photo.pchome.com.tw/i850942xyz/077'
+                     target='_blank'><p><img src='http://w6.pchome.com.tw/img/foothotbar/photo/4.jpg?2014062522'></p><i>20140607仁</i></a></span>
+            <span><a href='counter_footref.php?sid=2645979&url=http://photo.pchome.com.tw/pao750/01000' target='_blank'>
+                <p><img src='http://w6.pchome.com.tw/img/foothotbar/photo/5.jpg?2014062522'></p>
+                <i>20140510中</i></a></span>
+            <span><a href='counter_footref.php?sid=2645979&url=http://photo.pchome.com.tw/mawzen/0320' target='_blank'>
+                <p><img src='http://w6.pchome.com.tw/img/foothotbar/photo/6.jpg?2014062522'></p>
+                <i>2014/04/12 </i></a></span>
+        </div>
+        <div class='inner'>
+            <span><a href='counter_footref.php?sid=2645980&url=http://mypaper.pchome.com.tw/kenny0711/post/1326378942'
+                     target='_blank'><p><img src='http://w6.pchome.com.tw/img/foothotbar/mypaper/0.jpg?2014062522'></p>
+                <i>悼念堅哥-人生長短並不重要，令人懷念才是真實</i></a></span>
+            <span><a href='counter_footref.php?sid=2645980&url=http://mypaper.pchome.com.tw/sumyuen/post/1326479759'
+                     target='_blank'><p><img src='http://w6.pchome.com.tw/img/foothotbar/mypaper/1.jpg?2014062522'></p>
+                <i>2013聖誕點滴</i></a></span>
+            <span><a href='counter_footref.php?sid=2645980&url=http://mypaper.pchome.com.tw/leo3015/post/1325814538'
+                     target='_blank'><p><img src='http://w6.pchome.com.tw/img/foothotbar/mypaper/2.jpg?2014062522'></p>
+                <i>在江南與春天相遇(十)~梅園的鬱金香</i></a></span>
+            <span><a href='counter_footref.php?sid=2645980&url=http://mypaper.pchome.com.tw/cfotyl/post/1327665867'
+                     target='_blank'><p><img src='http://w6.pchome.com.tw/img/foothotbar/mypaper/3.jpg?2014062522'></p>
+                <i>103年德國自助旅行-13</i></a></span>
+            <span><a href='counter_footref.php?sid=2645980&url=http://mypaper.pchome.com.tw/samatha932/post/1326179413'
+                     target='_blank'><p><img src='http://w6.pchome.com.tw/img/foothotbar/mypaper/4.jpg?2014062522'></p>
+                <i>晨 曦</i></a></span>
+            <span><a
+                    href='counter_footref.php?sid=2645980&url=http://mypaper.pchome.com.tw/freewings730/post/1324781852'
+                    target='_blank'><p><img src='http://w6.pchome.com.tw/img/foothotbar/mypaper/5.jpg?2014062522'></p>
+                <i>【菊島遊】Day 1-1 石敢當與燒王船</i></a></span>
+            <span><a href='counter_footref.php?sid=2645980&url=http://mypaper.pchome.com.tw/o4myo/post/1324364341'
+                     target='_blank'><p><img src='http://w6.pchome.com.tw/img/foothotbar/mypaper/6.jpg?2014062522'></p>
+                <i>捷運民權西路站 平價又美味的早午餐-鯊魚咬吐司(中山撫順店)</i></a></span>
+        </div>
+        <div class='inner'> 
+<span><a href='counter_footref.php?sid=2645981&url= http://beauty.pchome.com.tw/myroom/turtlepiano/article/1322060698/ '
+         target='_blank'><p><img src='http://w6.pchome.com.tw/img/foothotbar/beauty/0.jpg?2014062522'></p><i>
+    美吾髮卡樂芙優質染髮霜(可可棕)和泡泡染小比較
+
+    &nbsp;&nbsp;&nbs </i></a></span> 
+<span><a href='counter_footref.php?sid=2645981&url= http://beauty.pchome.com.tw/myroom/turtlepiano/article/1322107263/ '
+         target='_blank'><p><img src='http://w6.pchome.com.tw/img/foothotbar/beauty/1.jpg?2014062522'></p><i>
+    【try】美的深走動面膜！
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;& </i></a></span> 
+<span><a href='counter_footref.php?sid=2645981&url= http://beauty.pchome.com.tw/myroom/turtlepiano/article/1322179130/ '
+         target='_blank'><p><img src='http://w6.pchome.com.tw/img/foothotbar/beauty/2.jpg?2014062522'></p><i>
+    【Try+推】Bio-essence燕窩滋養膠原白機能水
+
+    &nbsp;&nbsp;&nbsp;& </i></a></span> 
+<span><a href='counter_footref.php?sid=2645981&url= http://beauty.pchome.com.tw/myroom/anjulia/article/1322095388/ '
+         target='_blank'><p><img src='http://w6.pchome.com.tw/img/foothotbar/beauty/3.jpg?2014062522'></p><i> ☆AIMER
+    SHINE橙花水晶露☆給肌膚最天然的呵護
+
+    現在市面上的保養品 </i></a></span> 
+<span><a href='counter_footref.php?sid=2645981&url= http://beauty.pchome.com.tw/myroom/anjulia/article/1322101849/ '
+         target='_blank'><p><img src='http://w6.pchome.com.tw/img/foothotbar/beauty/4.jpg?2014062522'></p><i> 【體驗】潔倍 3
+    in 1極淨草本洗衣乳
+
+    最近金美克能又出新產品囉…這 </i></a></span> 
+<span><a href='counter_footref.php?sid=2645981&url= http://beauty.pchome.com.tw/myroom/s04291023/article/1321353694/ '
+         target='_blank'><p><img src='http://w6.pchome.com.tw/img/foothotbar/beauty/5.jpg?2014062522'></p><i> 【保養】Skin
+    Angel 格芙莉緊緻凝膠
+
+    Skin Angel 格芙莉緊緻凝膠收 </i></a></span> 
+<span><a href='counter_footref.php?sid=2645981&url= http://beauty.pchome.com.tw/myroom/s04291023/article/1322240728/ '
+         target='_blank'><p><img src='http://w6.pchome.com.tw/img/foothotbar/beauty/6.jpg?2014062522'></p><i>
+    【保養】TS6護一生-白皙淨透粉嫩精華霜/益生菌蔓越梅洛神花複方錠
+
+</i></a></span>
+        </div>
+        <div class='inner'>
+            <span><a href='counter_footref.php?sid=2645982&url=http://kaza.pchome.com.tw/me/woman6688/pic/6857'
+                     target='_blank'><p><img src='http://w6.pchome.com.tw/img/foothotbar/kaza/0.jpg?2014062522'></p><i>woman</i></a></span>
+            <span><a href='counter_footref.php?sid=2645982&url=http://kaza.pchome.com.tw/me/52sea/pic/82'
+                     target='_blank'><p><img src='http://w6.pchome.com.tw/img/foothotbar/kaza/1.jpg?2014062522'></p><i>
+                雨後彩虹 </i></a></span>
+            <span><a href='counter_footref.php?sid=2645982&url=http://kaza.pchome.com.tw/me/a006733/pic/1071'
+                     target='_blank'><p><img src='http://w6.pchome.com.tw/img/foothotbar/kaza/2.jpg?2014062522'></p><i>
+                龍 </i></a></span>
+            <span><a href='counter_footref.php?sid=2645982&url=http://kaza.pchome.com.tw/me/young1976/pic/3398'
+                     target='_blank'><p><img src='http://w6.pchome.com.tw/img/foothotbar/kaza/3.jpg?2014062522'></p><i>
+                好攝客 煌 </i></a></span>
+            <span><a href='counter_footref.php?sid=2645982&url=http://kaza.pchome.com.tw/me/young1976/pic/3397'
+                     target='_blank'><p><img src='http://w6.pchome.com.tw/img/foothotbar/kaza/4.jpg?2014062522'></p><i>
+                好攝客 煌 </i></a></span>
+            <span><a href='counter_footref.php?sid=2645982&url=http://kaza.pchome.com.tw/me/lexus460l/pic/547'
+                     target='_blank'><p><img src='http://w6.pchome.com.tw/img/foothotbar/kaza/5.jpg?2014062522'></p><i>
+                大海星空 </i></a></span>
+            <span><a href='counter_footref.php?sid=2645982&url=http://kaza.pchome.com.tw/me/clair8902/pic/376'
+                     target='_blank'><p><img src='http://w6.pchome.com.tw/img/foothotbar/kaza/6.jpg?2014062522'></p><i>
+                咕嚕咕嚕⊙ε⊙ </i></a></span>
+        </div>
+        <div class='inner'>
+            <span><a href='counter_footref.php?sid=2645983&url=http://travel.pchome.com.tw/blog/article/221'
+                     target='_blank'><p><img src='http://w6.pchome.com.tw/img/foothotbar/travel/0.jpg?2014062522'></p>
+                <i> 鶯歌深坑小確幸 </i></a></span>
+            <span><a href='counter_footref.php?sid=2645983&url=http://travel.pchome.com.tw/blog/article/221'
+                     target='_blank'><p><img src='http://w6.pchome.com.tw/img/foothotbar/travel/1.jpg?2014062522'></p>
+                <i> 【旅遊景點】 </i></a></span>
+            <span><a href='counter_footref.php?sid=2645983&url=http://travel.pchome.com.tw/blog/article/221'
+                     target='_blank'><p><img src='http://w6.pchome.com.tw/img/foothotbar/travel/2.jpg?2014062522'></p>
+                <i> [新北鶯歌]:鶯歌 </i></a></span>
+            <span><a href='counter_footref.php?sid=2645983&url=http://travel.pchome.com.tw/blog/article/220'
+                     target='_blank'><p><img src='http://w6.pchome.com.tw/img/foothotbar/travel/3.jpg?2014062522'></p>
+                <i> 蜜月旅行 - 人骨 </i></a></span>
+            <span><a href='counter_footref.php?sid=2645983&url=http://travel.pchome.com.tw/blog/article/219'
+                     target='_blank'><p><img src='http://w6.pchome.com.tw/img/foothotbar/travel/4.jpg?2014062522'></p>
+                <i> 白鮑溪溯溪拾玉，真 </i></a></span>
+            <span><a href='counter_footref.php?sid=2645983&url=http://travel.pchome.com.tw/blog/article/219'
+                     target='_blank'><p><img src='http://w6.pchome.com.tw/img/foothotbar/travel/5.jpg?2014062522'></p>
+                <i> 【台灣團購】南灣水 </i></a></span>
+            <span><a href='counter_footref.php?sid=2645983&url=http://travel.pchome.com.tw/blog/article/221'
+                     target='_blank'><p><img src='http://w6.pchome.com.tw/img/foothotbar/travel/6.jpg?2014062522'></p>
+                <i> 溯溪尋玉 </i></a></span>
+        </div>
+    </div>
+    <a href="#" class="next"><img src="img/arrow-next.gif"></a>
+</div>
+<script>
+    $(function () {
+        var ta = ['...', '| 人氣新聞', '| 人氣相簿', '| 人氣文章', '| 人氣照片', '| 人氣kaza', '| 人氣行程'];
+        var pa = $('#pagename');
+        var startid = 1;
+        pa.text(ta[startid]);
+        $('#photo_slides').slides({
+            preload: true,
+            preloadImage: 'img/loading.gif',
+            play: false,
+            pause: 2500,
+            hoverPause: true,
+            start: startid,
+            animationComplete: function (current) {
+                pa.text(ta[(current)]);
+            }
+        });
+    });
+</script>
+<!--相簿 end-->
+</div>
+<!-- 下欄 結束 -->
+<!-- 頁尾 開始 -->
+<footer>
+    <!-- 行動版 / 電腦版 start -->
+
+    <!-- 行動版 / 電腦版 end -->
+    <div class="footer_nav">
+        <span><a href="counter.php?sid=804">廣告刊登</a>|</span>
+        <span><a href="counter.php?sid=809">隱私權聲明</a>|</span>
+        <span><a href="counter.php?sid=810" target="_blank">消費者保護</a>|</span>
+        <span><a href="counter.php?sid=812">兒童網路安全</a>|</span>
+        <span><a href="counter.php?sid=814">About PChome</a>|</span>
+        <span><a href="counter.php?sid=815">投資人聯絡</a>|</span>
+        <span><a href="counter.php?sid=816">徵才</a></span>
+    </div>
+    <div class="footer_copy"><a href="counter.php?sid=617797">著作權保護</a> | 網路家庭版權所有、轉載必究 ‧Copyright PChome Online | <a
+            href="counter.php?sid=957">HiNet 主機代管</a>．本站已依<a href="counter.php?sid=812">網站內容分級</a>處理<p>PChome Online and
+        PChome are trademarks of PChome Online Inc.</p></div>
+</footer>
+<!-- 頁尾 結束 -->
+</div>
+<!-- 上欄 左欄 中欄 下欄 頁尾 end -->
+</div>
+<!-- 首頁大框架 end --></div>
+<script type="text/javascript"
+        src="http://adcl.pchome.com.tw:80/getAd2JS.html?type=43&channel=pchome_online_h&encoding=Utf8"></script>
+<script type="text/javascript"
+        src="http://adcl.pchome.com.tw:80/getAd2JS.html?type=44&channel=pchome_online_h&encoding=Utf8"></script>
+</body>
+</html>
+

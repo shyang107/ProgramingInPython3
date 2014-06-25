@@ -1,0 +1,411 @@
+24h.pchome.com.tw is referred to in:
+    pchome.html
+3c.msn.com.tw is referred to in:
+    msn.html
+3c.tw.msn.com is referred to in:
+    msn.html
+account.live.com is referred to in:
+    msn.html
+ad.pchome.com.tw is referred to in:
+    pchome.html
+adcl.pchome.com.tw is referred to in:
+    pchome.html
+ads1.msads.net is referred to in:
+    msn.html
+advertise.bingads.microsoft.com is referred to in:
+    msn.html
+advertising.microsoft.com is referred to in:
+    msn.html
+answers.microsoft.com is referred to in:
+    msn.html
+atm.pchome.com.tw is referred to in:
+    pchome.html
+au.yahoo.com is referred to in:
+    yahoo.html
+auto.msn.com.tw is referred to in:
+    msn.html
+auto.tw.msn.com is referred to in:
+    msn.html
+b.scorecardresearch.com is referred to in:
+    msn.html
+beauty.pchome.com.tw is referred to in:
+    pchome.html
+bonus.pchome.com.tw is referred to in:
+    pchome.html
+buy.housefun.com.tw is referred to in:
+    yahoo.html
+buy.yahoo.com.tw is referred to in:
+    yahoo.html
+c.tw.msn.com is referred to in:
+    msn.html
+ca.yahoo.com is referred to in:
+    yahoo.html
+car.pchome.com.tw is referred to in:
+    pchome.html
+choice.microsoft.com is referred to in:
+    msn.html
+classifieds.pchome.com.tw is referred to in:
+    pchome.html
+club.pchome.com.tw is referred to in:
+    pchome.html
+crazymike.tw is referred to in:
+    pchome.html
+developer.yahoo.com is referred to in:
+    yahoo.html
+developer.yahoo.net is referred to in:
+    yahoo.html
+ejokeimg.pchome.com.tw is referred to in:
+    pchome.html
+elearning.pchome.com.tw is referred to in:
+    pchome.html
+ent.msn.com.tw is referred to in:
+    msn.html
+ent.tw.msn.com is referred to in:
+    msn.html
+epaper.pchome.com.tw is referred to in:
+    pchome.html
+espanol.yahoo.com is referred to in:
+    yahoo.html
+event1.rakuya.com.tw is referred to in:
+    pchome.html
+events.samsung.com.tw is referred to in:
+    pchome.html
+everything.yahoo.com is referred to in:
+    yahoo.html
+explore.live.com is referred to in:
+    msn.html
+fashion.msn.com.tw is referred to in:
+    msn.html
+fate.pchome.com.tw is referred to in:
+    pchome.html
+find.travel.tw.msn.com is referred to in:
+    msn.html
+forum.pchome.com.tw is referred to in:
+    pchome.html
+forum.rakuya.com.tw is referred to in:
+    pchome.html
+fund.pchome.com.tw is referred to in:
+    pchome.html
+g.msn.com.tw is referred to in:
+    msn.html
+global.pchome.com.tw is referred to in:
+    pchome.html
+go.microsoft.com is referred to in:
+    msn.html
+go.msnserver.com is referred to in:
+    msn.html
+health.pchome.com.tw is referred to in:
+    pchome.html
+help.cc.tw.yahoo.com is referred to in:
+    yahoo.html
+hk.yahoo.com is referred to in:
+    yahoo.html
+house.tw.msn.com is referred to in:
+    msn.html
+house.tw.msn.com.tw is referred to in:
+    msn.html
+icare.pchome.com.tw is referred to in:
+    pchome.html
+ie9.discoverbing.com is referred to in:
+    msn.html
+info.yahoo.com is referred to in:
+    yahoo.html
+kaw.stc.s-msn.com is referred to in:
+    msn.html
+kaw.stj.s-msn.com is referred to in:
+    msn.html
+kaza.pchome.com.tw is referred to in:
+    pchome.html
+lifestyle.msn.com.tw is referred to in:
+    msn.html
+living.tw.msn.com is referred to in:
+    msn.html
+login.live.com is referred to in:
+    msn.html
+love.pchome.com.tw is referred to in:
+    pchome.html
+lscp.pchome.com.tw is referred to in:
+    pchome.html
+luxury.tw.msn.com is referred to in:
+    msn.html
+mail.pchome.com.tw is referred to in:
+    pchome.html
+mail.yahoo.com is referred to in:
+    yahoo.html
+mail.yahoo.com.tw is referred to in:
+    yahoo.html
+market.msn.com.tw is referred to in:
+    msn.html
+media.zenfs.com is referred to in:
+    yahoo.html
+member.pchome.com.tw is referred to in:
+    pchome.html
+money.pchome.com.tw is referred to in:
+    pchome.html
+movie.pchome.com.tw is referred to in:
+    pchome.html
+msnportal.112.2o7.net is referred to in:
+    msn.html
+myname.pchome.com.tw is referred to in:
+    pchome.html
+mypage.pchome.com.tw is referred to in:
+    pchome.html
+mypaper.pchome.com.tw is referred to in:
+    pchome.html
+news.msn.com.tw is referred to in:
+    msn.html
+news.pchome.com.tw is referred to in:
+    pchome.html
+news.tw.msn.com is referred to in:
+    msn.html
+office-sms.pchome.com.tw is referred to in:
+    pchome.html
+office.microsoft.com is referred to in:
+    msn.html
+ogp.me is referred to in:
+    msn.html
+outlook.com is referred to in:
+    msn.html
+p.gm99.com is referred to in:
+    yahoo.html
+pchome.megatime.com.tw is referred to in:
+    pchome.html
+pchome.syspower.com.tw is referred to in:
+    pchome.html
+photo.pchome.com.tw is referred to in:
+    pchome.html
+pic.adver.com.tw is referred to in:
+    pchome.html
+privacy2.msn.com is referred to in:
+    msn.html
+profile.live.com is referred to in:
+    msn.html
+promo.wretch.cc is referred to in:
+    yahoo.html
+promotion.msn.com.tw is referred to in:
+    msn.html
+rad.msn.com is referred to in:
+    msn.html
+search.pchome.com.tw is referred to in:
+    pchome.html
+security.tw.msn.com is referred to in:
+    msn.html
+settings.location.4.msn.com is referred to in:
+    msn.html
+sg.yahoo.com is referred to in:
+    yahoo.html
+sgstb.msn.com is referred to in:
+    msn.html
+shopping.pchome.com.tw is referred to in:
+    pchome.html
+sin.stb.s-msn.com is referred to in:
+    msn.html
+sin.stb00.s-msn.com is referred to in:
+    msn.html
+sin.stb01.s-msn.com is referred to in:
+    msn.html
+sin.stc.s-msn.com is referred to in:
+    msn.html
+sin.stj.s-msn.com is referred to in:
+    msn.html
+skydrive.com is referred to in:
+    msn.html
+skype.pchome.com.tw is referred to in:
+    msn.html
+    pchome.html
+sms.pchome.com.tw is referred to in:
+    pchome.html
+sport.tw.msn.com is referred to in:
+    msn.html
+support.microsoft.com is referred to in:
+    msn.html
+support.msn.com is referred to in:
+    msn.html
+toget.pchome.com.tw is referred to in:
+    pchome.html
+toolbar.msn.com is referred to in:
+    msn.html
+travel.pchome.com.tw is referred to in:
+    pchome.html
+travel.tw.msn.com is referred to in:
+    msn.html
+travel.tw.msn.com.tw is referred to in:
+    msn.html
+tw.autos.yahoo.com is referred to in:
+    yahoo.html
+tw.bid.yahoo.com is referred to in:
+    yahoo.html
+tw.bing.com is referred to in:
+    msn.html
+tw.brand.theme.bid.yahoo.com is referred to in:
+    yahoo.html
+tw.careers.yahoo.com is referred to in:
+    yahoo.html
+tw.dir.yahoo.com is referred to in:
+    yahoo.html
+tw.emarketing.yahoo.com is referred to in:
+    yahoo.html
+tw.fashion.yahoo.com is referred to in:
+    yahoo.html
+tw.female.theme.bid.yahoo.com is referred to in:
+    yahoo.html
+tw.help.cc.yahoo.com is referred to in:
+    yahoo.html
+tw.house.yahoo.com is referred to in:
+    yahoo.html
+tw.info.yahoo.com is referred to in:
+    yahoo.html
+tw.knowledge.yahoo.com is referred to in:
+    yahoo.html
+tw.lifestyle.yahoo.com is referred to in:
+    yahoo.html
+tw.mall.yahoo.com is referred to in:
+    yahoo.html
+tw.marketing.campaign.yahoo.net is referred to in:
+    yahoo.html
+tw.messenger.yahoo.com is referred to in:
+    yahoo.html
+tw.movie.yahoo.com is referred to in:
+    yahoo.html
+tw.msn.com is referred to in:
+    msn.html
+tw.music.yahoo.net is referred to in:
+    yahoo.html
+tw.news.yahoo.com is referred to in:
+    yahoo.html
+tw.promo.yahoo.com is referred to in:
+    yahoo.html
+tw.rd.yahoo.com is referred to in:
+    yahoo.html
+tw.safely.yahoo.com is referred to in:
+    yahoo.html
+tw.screen.yahoo.com is referred to in:
+    yahoo.html
+tw.search.bid.yahoo.com is referred to in:
+    yahoo.html
+tw.search.yahoo.com is referred to in:
+    yahoo.html
+tw.security.yahoo.com is referred to in:
+    yahoo.html
+tw.stock.yahoo.com is referred to in:
+    yahoo.html
+tw.tech.yahoo.com is referred to in:
+    yahoo.html
+tw.urcosme.fashion.yahoo.net is referred to in:
+    yahoo.html
+tw.yahoo.com is referred to in:
+    yahoo.html
+twitter.com is referred to in:
+    msn.html
+udc.msn.com is referred to in:
+    msn.html
+uk.yahoo.com is referred to in:
+    yahoo.html
+update.microsoft.com is referred to in:
+    msn.html
+vexchange.pchome.com.tw is referred to in:
+    pchome.html
+video.tw.msn.com is referred to in:
+    msn.html
+w6.pchome.com.tw is referred to in:
+    pchome.html
+weather.tw.msn.com is referred to in:
+    msn.html
+web.pccenter.com.tw is referred to in:
+    yahoo.html
+webgame.pchome.com.tw is referred to in:
+    pchome.html
+webhosting.pchome.com.tw is referred to in:
+    pchome.html
+windows.microsoft.com is referred to in:
+    msn.html
+www.backpackers.com.tw is referred to in:
+    msn.html
+www.bing.com is referred to in:
+    msn.html
+www.bwt.com.tw is referred to in:
+    yahoo.html
+www.cdic.gov.tw is referred to in:
+    yahoo.html
+www.colatour.com.tw is referred to in:
+    yahoo.html
+www.dtsgroup.com.tw is referred to in:
+    yahoo.html
+www.facebook.com is referred to in:
+    msn.html
+www.gomaji.com is referred to in:
+    yahoo.html
+www.happyholiday.com.tw is referred to in:
+    yahoo.html
+www.icra.org is referred to in:
+    msn.html
+www.ipevo.com.tw is referred to in:
+    pchome.html
+www.lativ.com.tw is referred to in:
+    yahoo.html
+www.lccnet.com.tw is referred to in:
+    yahoo.html
+www.life8.com.tw is referred to in:
+    yahoo.html
+www.lifetour.com.tw is referred to in:
+    pchome.html
+    yahoo.html
+www.liker.com.tw is referred to in:
+    pchome.html
+www.mail.live.com is referred to in:
+    msn.html
+www.microsoft.com is referred to in:
+    msn.html
+www.microsoft.com.tw is referred to in:
+    msn.html
+www.momoshop.com.tw is referred to in:
+    msn.html
+www.msn.com is referred to in:
+    msn.html
+www.nissan.com.tw is referred to in:
+    yahoo.html
+www.pchome.com.tw is referred to in:
+    pchome.html
+www.pchomepay.com.tw is referred to in:
+    pchome.html
+www.pchometalk.com is referred to in:
+    pchome.html
+www.pchomeusa.com is referred to in:
+    pchome.html
+www.pcstore.com.tw is referred to in:
+    pchome.html
+www.photofast.com.tw is referred to in:
+    pchome.html
+www.rakuya.com.tw is referred to in:
+    pchome.html
+www.rsac.org is referred to in:
+    msn.html
+www.ruten.com.tw is referred to in:
+    pchome.html
+www.settour.com.tw is referred to in:
+    yahoo.html
+www.tagapie.com.tw is referred to in:
+    pchome.html
+www.tahsintour.com.tw is referred to in:
+    yahoo.html
+www.ticrf.org.tw is referred to in:
+    msn.html
+www.togame.com.tw is referred to in:
+    pchome.html
+www.toweb.com.tw is referred to in:
+    pchome.html
+www.w3.org is referred to in:
+    msn.html
+    yahoo.html
+www.windowsmedia.com is referred to in:
+    msn.html
+www.wretch.cc is referred to in:
+    yahoo.html
+www.yahoo.co.jp is referred to in:
+    yahoo.html
+www.yahoo.com is referred to in:
+    yahoo.html
+yhtg2.gm99.com is referred to in:
+    yahoo.html
+yui.yahooapis.com is referred to in:
+    yahoo.html

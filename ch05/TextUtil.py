@@ -63,7 +63,7 @@ def shorten(text, length=25, indicator="..."):
     'Radio Fre*'
     """
     if len(text) > length:
-        text = text[:len(text) - len(indicator)] + indicator
+        text = text[:length - len(indicator)] + indicator
     return text
 
 
